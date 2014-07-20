@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang='en' ng-app>
+
+<head>
+	<!-- Bootstrap css library for page layout -->
+	<link rel='stylesheet' type='text/css' href='../bower_components/bootstrap/dist/css/bootstrap.min.css' />
+
+	<!-- AngularJS to avoid duplicate HTML templates. All data is local. -->
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<!-- jQuery for bootstrap and minor animations -->
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- Javascript for bootstrap -->
+	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- My js controllers -->
+	<script src='../controllers/controllers.js'></script>
+
+	<script>
+	  $(document).ready(function(){
+	    $('.carousel').carousel();
+	  });
+	</script>
+</head>
+
+<body>
+
+	<!-- NAVBAR -->
+
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav" id='main-menu'>
+	        <li><a href="#cover-screen">Home</a></li>
+	        <li><a href="#overview-screen">Overview</a></li>
+	        <li><a href="#skills-screen">Skills</a></li>
+	        <li><a href="#">Education</a></li>
+	        <li><a href="#">Experience</a></li>
+	        <li><a href="#">Portfolio</a></li>
+	        <li><a href="#">Contact</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<!-- Cover -->
+
+	<div class='container-fluid screen-section' id='cover-screen' style='background-color:silver'>
+		<div class='row'>
+			<header class='col-xs-12 text-center'>
+				<h1>ADAM ESTELA</h1>
+				<p>PROFESSIONAL SOFTWARE ENGINEER</p>
+			</header>
+		</div>
+
+		<div class='row'>
+			<div class='col-xs-1 col-xs-offset-4 social-icons'>
+				<a href='https://github.com/aconfee' class='btn-round btn-github'></a>
+			</div>
+			<div class='col-xs-1'>
+				<a href='https://www.linkedin.com/profile/view?id=161738073' class='btn-round btn-linkedin'></a>
+			</div>
+			<div class='col-xs-1'>
+				<a href='http://aeprogramming.wordpress.com/' class='btn-round btn-wordpress'></a>
+			</div>
+			<div class='col-xs-1'>
+				<a href='https://www.facebook.com/adam.estela' class='btn-round btn-facebook'></a>
+			</div>
+		</div>
+
+		<div class='row'>
+			<!-- Carousel Reviews -->
+			<div id='review-carousel' class='carousel slide text-center'>
+				<div class='carousel-inner'>
+					<div class='item active'>
+						<span class='review-text'>This is a review...</span>
+					</div>
+					<div class='item'>
+						<span class='review-text'>Yet another reveiw</span>
+					</div>
+					<div class='item'>
+						<span class='review-text'>"Adam is amazing" -Bill Gates</span>
+					</div>
+				</div>
+
+				<ol class='carousel-indicators'>
+					<li data-target='#review-carousel' data-slide-to='0' class='active'></li>
+					<li data-target='#review-carousel' data-slide-to='1'></li>
+					<li data-target='#review-carousel' data-slide-to='2'></li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class='container-fluid screen-section' id='overview-screen'>
+		<header class='col-xs-12 text-center'>
+			<h1>OVERVIEW</h1>
+			<div class='header-underline'></div>
+		</header>
+	</div>
+	<div class='container-fluid screen-section' id='skills-screen' style='background-color:silver'>
+		<header class='col-xs-12 text-center'>
+			<h1>SKILLS</h1>
+			<div class='header-underline'></div>
+		</header>
+	</div>
+</body>
+
+<html>
+
