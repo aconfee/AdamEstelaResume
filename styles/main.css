@@ -1,0 +1,185 @@
+body{
+	font-family: 'Oxygen', sans-serif;
+
+	background-image: url('file:///C:/Users/OceanMinded/Desktop/AdamEstelaResume/resources/test.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.navbar-default{
+	background-color:white;
+	opacity: .85;
+
+	font-weight: bold;
+
+	text-align: center;
+}
+
+.navbar .nav,
+.navbar .nav > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    *zoom:1; /* hasLayout ie7 trigger */
+}
+
+.navbar .nav > li > a {
+	color:#555555;
+	opacity: 1;
+}
+
+.navbar .nav > li > a:hover {
+	color:#409edd;
+}
+
+.font-white{
+	color:white;
+}
+
+.font-dark{
+	color:#555555;
+}
+
+.center{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#cover-screen{
+	margin-bottom:10%;
+}
+
+#cover-screen-title{
+	margin-top: 20em;
+}
+
+.cover-text{
+	font-weight: bold;
+	font-size:4em;
+	letter-spacing: .2em;
+}
+
+h1{
+	font-weight:bold;
+	font-size: 3em;
+	letter-spacing: .2em;
+	color:#555555;
+}
+
+h2{
+	font-size:1.5em;
+	letter-spacing: .1em;
+	color:#555555;
+}
+
+.social-icons{
+	width:100%;
+
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:30px;
+	margin-bottom: 60px;
+
+	text-align: center;
+}
+
+.icon{
+	width:3.4em;
+	height:3.4em;
+
+	border-radius: 50%;
+	border-width: 1px;
+	border-color: white;
+	border-style: solid;
+
+	display:inline-block;
+
+	margin:0 15px;
+}
+
+.icon img{
+	margin-top:10px;
+
+	width:25px;
+	height:25px;
+}
+
+.icon:hover{
+	background-color:white;
+}
+
+.carousel-inner{
+	text-align: center;
+}
+
+.quote{
+	word-wrap:break-word;
+	max-width: 30%;
+	font-style: italic;
+	color:white;
+	opacity:0.9;
+	display:inline-block;
+	margin-bottom: 10em;
+}
+
+.text-header{
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.text{
+	font-size: 1.2em;
+	word-wrap:break-word;
+	color:#757575;
+}
+
+.screen{
+	padding-top:100px;
+	padding-bottom:50px;
+	background-color: white;
+}
+
+.underline{
+	border-top: 2px solid #409edd;
+	max-width: 100px;
+	width:100px;
+	display: inline-block;
+}
+
+.underline-inverse{
+	border-color: white;
+}
+
+.section{
+	margin-top: 50px;
+}
+
+#contact-screen{
+	background-color: #3498DB;
+}
+
+.inverse{
+	color:white;
+}
+
+.radial-progress{
+	background-color: #d6dadc;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+
+.circle .fill{
+	background-color:#97a71d;
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	border-radius: 50%;
+	clip: rect(0px, 60px, 60px, 0px);
+}
+
+
+
+
+

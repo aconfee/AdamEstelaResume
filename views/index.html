@@ -2,8 +2,12 @@
 <html lang='en' ng-app>
 
 <head>
+	<!-- font -->
+	<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
 	<!-- Bootstrap css library for page layout -->
 	<link rel='stylesheet' type='text/css' href='../bower_components/bootstrap/dist/css/bootstrap.min.css' />
+	<link rel='stylesheet' type='text/css' href='../styles/main.css' />
 
 	<!-- AngularJS to avoid duplicate HTML templates. All data is local. -->
 	<script src="../bower_components/angular/angular.min.js"></script>
@@ -26,7 +30,7 @@
 
 	<!-- NAVBAR -->
 
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style:'opacity:0'>
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
@@ -41,13 +45,13 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav" id='main-menu'>
-	        <li><a href="#cover-screen">Home</a></li>
+	        <li class='active'><a href="#cover-screen">Home</a></li>
 	        <li><a href="#overview-screen">Overview</a></li>
 	        <li><a href="#skills-screen">Skills</a></li>
-	        <li><a href="#">Education</a></li>
-	        <li><a href="#">Experience</a></li>
-	        <li><a href="#">Portfolio</a></li>
-	        <li><a href="#">Contact</a></li>
+	        <li><a href="#education-screen">Education</a></li>
+	        <li><a href="#experience-screen">Experience</a></li>
+	        <li><a href="#portfolio-screen">Portfolio</a></li>
+	        <li><a href="#contact-screen">Contact</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -55,26 +59,35 @@
 
 	<!-- Cover -->
 
-	<div class='container-fluid screen-section' id='cover-screen' style='background-color:silver'>
+	<div class='container-fluid screen-section' id='cover-screen'>
 		<div class='row'>
-			<header class='col-xs-12 text-center'>
-				<h1>ADAM ESTELA</h1>
-				<p>PROFESSIONAL SOFTWARE ENGINEER</p>
+			<header class='col-xs-12 text-center' id='cover-screen-title'>
+				<h1 class='cover-text font-white'>ADAM ESTELA</h1>
+				<p class='subheader-text font-white'>PROFESSIONAL SOFTWARE ENGINEER</p>
 			</header>
 		</div>
 
 		<div class='row'>
-			<div class='col-xs-1 col-xs-offset-4 social-icons'>
-				<a href='https://github.com/aconfee' class='btn-round btn-github'></a>
-			</div>
-			<div class='col-xs-1'>
-				<a href='https://www.linkedin.com/profile/view?id=161738073' class='btn-round btn-linkedin'></a>
-			</div>
-			<div class='col-xs-1'>
-				<a href='http://aeprogramming.wordpress.com/' class='btn-round btn-wordpress'></a>
-			</div>
-			<div class='col-xs-1'>
-				<a href='https://www.facebook.com/adam.estela' class='btn-round btn-facebook'></a>
+			<div class='social-icons'>
+				<a href='https://github.com/aconfee' target="_blank">
+					<div class='icon'>
+						<img src='../resources/icon-github.png'/>
+					</div>
+				</a>
+				<a href='https://www.linkedin.com/profile/view?id=161738073' target="_blank">
+					<div class='icon'>
+						<img src='../resources/icon-linkedin.png'/>
+					</div>
+				</a>
+				<a href='http://aeprogramming.wordpress.com/' target="_blank">
+					<div class='icon'>
+						<img src='../resources/icon-youtube.png'/>
+					</div>
+				</a>
+					<div class='icon'>
+						<img src='../resources/icon-facebook.png' onmouseover="this.src='../resources/icon-facebook-hover.png'" onmouseout="this.src='../resources/icon-facebook.png'"/>
+						<a href='https://www.facebook.com/adam.estela' target="_blank"></a>
+					</div>
 			</div>
 		</div>
 
@@ -83,13 +96,13 @@
 			<div id='review-carousel' class='carousel slide text-center'>
 				<div class='carousel-inner'>
 					<div class='item active'>
-						<span class='review-text'>This is a review...</span>
+						<p class='quote'>"Adam has been great to work with, I have worked with him on multiple game projects as well as side projects in our spare time. He is unbelievably hard working and motivated in everything he does."<br/>-DAVID JAMES</p>
 					</div>
 					<div class='item'>
-						<span class='review-text'>Yet another reveiw</span>
+						<p class='quote'>Yet another reveiw</p>
 					</div>
 					<div class='item'>
-						<span class='review-text'>"Adam is amazing" -Bill Gates</span>
+						<p class='quote'>"Adam is amazing" -Bill Gates</p>
 					</div>
 				</div>
 
@@ -101,17 +114,136 @@
 			</div>
 		</div>
 	</div>
-	<div class='container-fluid screen-section' id='overview-screen'>
-		<header class='col-xs-12 text-center'>
-			<h1>OVERVIEW</h1>
-			<div class='header-underline'></div>
-		</header>
+	<div class='container-fluid screen' id='overview-screen'>
+		<div class='row'>
+			<header class='col-xs-12 text-center section-title'>
+				<h1>OVERVIEW</h1>
+				<div class='underline'></div>
+				<h2>A Brief History</h2>
+			</header>
+		</div>
+		<div class='row section'>
+			<div class='col-xs-1 col-xs-offset-2'>
+				<img src="../resources/icon-facebook-hover.png" class="img-responsive">
+			</div>
+			<div class='col-xs-6 col-xs-offset-1 text'>
+				<span class='text-header'>GAMES&nbsp;&nbsp;</span><span>My foundation lies in low level programming (ASM/C/C++) which I used to build several game engines from the ground up with teams of four developers. On these teams I not only acted as developer, but producer, where I ensured complete milestones and product delivery. I built five complete games during my 3.5 years of matriculation and written tens of thousands of lines of code. I've written everything from graphics to AI, and everything in between.  
+				</span>
+			</div>
+		</div>
+		<div class='row section'>
+			<div class='col-xs-1 col-xs-offset-2'>
+				<img src="../resources/icon-facebook-hover.png" class="img-responsive">
+			</div>
+			<div class='col-xs-6 col-xs-offset-1 text'>
+				<span class='text-header'>TEST&nbsp;&nbsp;</span><span>I've been all across the board with testing and am constantly on my toes learning new things. On my first professional project I started as an automated UI tester, but quickly expanded my scope of responsibility to focus on infrastructure. I've worked on our continuous integration pipeline, set up test frameworks for other devs, written tools for other test automators, and, of course, written tests. I've successfully helped reduce bug turn around time and false negatives.</span>
+			</div>
+		</div>
+		<div class='row section'>
+			<div class='col-xs-1 col-xs-offset-2'>
+				<img src="../resources/icon-facebook-hover.png" class="img-responsive">
+			</div>
+			<div class='col-xs-6 col-xs-offset-1 text'>
+				<span class='text-header'>WEB&nbsp;&nbsp;</span><span>I'm currently entering the world of web development. While testing at a web service company, I fell in love with web development and natuarlly gravitated toward such roles. I ramped up on development with the help and professional critiques of my co-workers and have started contributing to front end development on a professional level.</span>
+			</div>
+		</div>
 	</div>
-	<div class='container-fluid screen-section' id='skills-screen' style='background-color:silver'>
-		<header class='col-xs-12 text-center'>
-			<h1>SKILLS</h1>
-			<div class='header-underline'></div>
-		</header>
+	<div class='container-fluid screen' id='skills-screen'>
+		<div class='row'>
+			<header class='col-xs-12 text-center section-title'>
+				<h1>SKILLS</h1>
+				<div class='underline'></div>
+				<h2>Languages and Tools</h2>
+			</header>
+		</div>
+		<div class='row section'>
+			<div class='col-xs-2 col-xs-offset-2'>
+				<div class="radial-progress">
+				  <div class="circle">
+				    <div class="fill"></div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='container-fluid screen' id='education-screen'>
+		<div class='row'>
+			<header class='col-xs-12 text-center section-title'>
+				<h1>EDUCATION</h1>
+				<div class='underline'></div>
+				<h2>How I Spent $185,677</h2>
+			</header>
+		</div>
+		<div class='row section'>
+			<div class='col-xs-2 col-xs-offset-2'>
+				<img src="../resources/digi-logo.png" class="img-responsive">
+			</div>
+			<div class='col-xs-6 text'>
+				<span class='text-header'>
+					DIGIPEN INSTITUTE OF TECHNOLOGY
+				</span><span>Redmond, WA</span>
+				<p>B.S. in Computer Science &amp; Minor in Mathematics </p>
+				<p><b>Graduated:</b> December 13th, 2013</p>
+			</div>
+		</div>
+	</div>
+	<div class='container-fluid screen' id='experience-screen'>
+		<div class='row'>
+			<header class='col-xs-12 text-center section-title'>
+				<h1>EXPERIENCE</h1>
+				<div class='underline'></div>
+				<h2>How I Plan To Repay $185,677</h2>
+			</header>
+		</div>
+		<div class='section'>
+			<div class='col-xs-4 col-xs-offset-2 text'>
+				<span class='text-header'>
+					PaperG
+				</span><span>Kirkland, WA</span>
+				<p>Software Engineer in Test II / Feb 2013 - Current</p>
+				<p>
+					I'm expanding and improving our testing and CI platform by:
+					<ul>
+						<li><p>Making the CI process as transparent and easy for devs as possible</p></li>
+						<li><p>Preventing regression with thoughtfully automated core user experiences</p></li>
+						<li><p>Improving tests and tools to provide more reliable feedback</p></li>
+						<li><p>Experimenting with potential tools and processes for further improvement</p></li>
+					</ul>
+					I quickly grasped Javascript, Java, HTML, and CSS as well as several tools that allowed me to work more affectively. Within a week I was contributing code, and after 4 months, I was promoted. 
+				</p>
+			</div>
+			<div class='col-xs-4 text'>
+				<span class='text-header'>
+					DigiPen Institute of Technology
+				</span><span>Redmond, WA</span>
+				<p>Teaching Assistant and Tutor / Jan 2012 - Dec 2013</p>
+				<p>While working towards my degree, I was a TA for:
+					<ul>
+						<li><p>Graphics [3D rendering from scratch]</p></li>
+						<li><p>Game Implementation Techniques [Building a game engine]</p></li>
+						<li><p>English</p></li>
+					</ul>
+					I also served as the academic support tutor for CS, Mathematics, and English where I patiently assisted students through problems, aided in debugging, explained concepts, and offered encouragement.</p>
+			</div>
+		</div>
+	</div>
+	<div class='container-fluid screen' id='portfolio-screen'>
+		<div class='row'>
+			<header class='col-xs-12 text-center section-title'>
+				<h1>PORTFOLIO</h1>
+				<div class='underline'></div>
+				<h2>What I Did While Spending $185,677</h2>
+			</header>
+		</div>
+	</div>
+	<div class='container-fluid screen' id='contact-screen'>
+		<div class='row'>
+			<header class='col-xs-12 text-center section-title'>
+				<h1 class='inverse'>CONTACT</h1>
+				<div class='underline underline-inverse'></div>
+				<h2 class='inverse'>Call Me... and tell me everything will be ok.</h2>
+			</header>
+		</div>
 	</div>
 </body>
 
