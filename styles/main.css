@@ -126,6 +126,7 @@ h2{
 .text-header{
 	font-size: 1.4em;
 	font-weight: bold;
+	color:#757575;
 }
 
 .text{
@@ -179,7 +180,17 @@ h2{
 	clip: rect(0px, 60px, 60px, 0px);
 }
 
+.progress-bar-custom{
+	text-align: left;
+}
 
+.progress-bar-text{
+	margin-left: 20px;
+}
 
+.well-sm{
+	margin:15px 3px;
+	display: inline-block;
+}
 
 
