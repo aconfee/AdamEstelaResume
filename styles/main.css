@@ -184,13 +184,44 @@ h2{
 	text-align: left;
 }
 
+.progress{
+	height:30px;
+	box-shadow: 3px 3px 5px #888888;
+}
+
+.progress:hover{
+	cursor: pointer;
+}
+
 .progress-bar-text{
 	margin-left: 20px;
+	margin-top: 4px;
 }
 
 .well-sm{
 	margin:15px 3px;
 	display: inline-block;
+}
+
+.skill-attribute{
+	float:left;
+}
+
+.right-align{
+	text-align: right;
+}
+
+.left-align{
+	text-align: left;
+}
+
+.attribute-description{
+	max-width: 100%;
+	word-break:break-word;
+}
+
+.progress-selected{
+    box-shadow: inset 3px 3px 5px #275427;
 }
 
 
