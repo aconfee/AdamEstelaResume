@@ -17,7 +17,7 @@
 	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 	<!-- My js controllers -->
-	<script src='../controllers/controllers.js'></script>
+	<script src='../controllers/main.js'></script>
 
 	<script>
 	  $(document).ready(function(){
@@ -148,7 +148,7 @@
 			</div>
 		</div>
 	</div>
-	<div class='container-fluid screen' id='skills-screen'>
+	<div class='container-fluid screen' id='skills-screen' ng-controller='SkillsController'>
 		<div class='row'>
 			<header class='col-xs-12 text-center section-title'>
 				<h1>SKILLS</h1>
@@ -159,34 +159,9 @@
 		<div class='row section'>
 			<div class='col-xs-4 col-xs-offset-2'>
 				<p class='text-header'>LANGUAGES</p>
-				<div class="progress progress-selected">
-				  <div class="progress-bar progress-bar-success progress-bar-custom progress-selected" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-				    <p class='progress-bar-text'>C/C++</p>
-				  </div>
-				</div>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-success progress-bar-custom" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-				    <p class='progress-bar-text'>C#</p>
-				  </div>
-				</div>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-success progress-bar-custom progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-				    <p class='progress-bar-text'>Javascript/jQuery</p>
-				  </div>
-				</div>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-success progress-bar-custom" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-				    <p class='progress-bar-text'>HTML/CSS</p>
-				  </div>
-				</div>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-success progress-bar-custom" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-				    <p class='progress-bar-text'>Java</p>
-				  </div>
-				</div>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-success progress-bar-custom" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-				    <p class='progress-bar-text'>Shellscript</p>
+				<div class="progress progress-selected" ng-repeat='language in languages'>
+				  <div class="progress-bar progress-bar-success progress-bar-custom progress-selected" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:{{ language.percent }}">
+				    <p class='progress-bar-text'>{{ language.name }}</p>
 				  </div>
 				</div>
 			</div>
@@ -208,34 +183,9 @@
 		<div class='row section'>
 			<div class='col-xs-4 col-xs-offset-2'>
 				<p class='text-header'>TOOLS</p>
-				<div class="progress progress-selected">
-				  <div class="progress-bar progress-bar-success progress-bar-custom progress-selected" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
-				    <p class='progress-bar-text'>Git</p>
-				  </div>
-				</div>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-success progress-bar-custom" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-				    <p class='progress-bar-text'>Selenium Web Driver</p>
-				  </div>
-				</div>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-success progress-bar-custom" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-				    <p class='progress-bar-text'>Strider Continuous Integration</p>
-				  </div>
-				</div>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-success progress-bar-custom progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-				    <p class='progress-bar-text'>AngularJS</p>
-				  </div>
-				</div>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-success progress-bar-custom progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-				    <p class='progress-bar-text'>Azure</p>
-				  </div>
-				</div>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-success progress-bar-custom progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
-				    <p class='progress-bar-text'>NodeJS</p>
+				<div class="progress progress-selected" ng-repeat='tool in tools'>
+				  <div class="progress-bar progress-bar-success progress-bar-custom progress-selected" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:{{ tool.percent }}">
+				    <p class='progress-bar-text'>{{ tool.name }}</p>
 				  </div>
 				</div>
 			</div>
