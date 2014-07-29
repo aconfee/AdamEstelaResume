@@ -111,6 +111,7 @@ h2{
 
 .carousel-inner{
 	text-align: center;
+	height:20em;
 }
 
 .quote{
@@ -164,24 +165,13 @@ h2{
 	color:white;
 }
 
-.radial-progress{
-	background-color: #d6dadc;
-	width: 120px;
-	height: 120px;
-	border-radius: 50%;
-}
-
-.circle .fill{
-	background-color:#97a71d;
-	width: 120px;
-	height: 120px;
-	position: absolute;
-	border-radius: 50%;
-	clip: rect(0px, 60px, 60px, 0px);
-}
-
-.progress-bar-custom{
+.progress-bar{
 	text-align: left;
+}
+
+.progress-bar p{
+	margin-left: 20px;
+	margin-top: 4px;
 }
 
 .progress{
@@ -191,11 +181,6 @@ h2{
 
 .progress:hover{
 	cursor: pointer;
-}
-
-.progress-bar-text{
-	margin-left: 20px;
-	margin-top: 4px;
 }
 
 .well-sm{
@@ -224,4 +209,34 @@ h2{
     box-shadow: inset 3px 3px 5px #275427;
 }
 
+.red{
+	background-color: red;
+}
+
+.yellow{
+	background-color: yellow;
+}
+
+.blue{
+	background-color: blue;
+}
+
+.portfolio-item{
+	width:200px;
+	height:150px;
+	margin: 20px 15px;
+	display:inline-block;
+	float:left;
+
+	min-width: 200px;
+}
+
+.portfolio-items{
+	width:90%;
+	height:auto;
+
+	display: inline-block;
+
+	max-width:920px;
+}
 

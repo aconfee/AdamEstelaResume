@@ -6,9 +6,9 @@ function SkillsController($scope){
 	$scope.languages = [
 		{name:"C/C++", percent:"90%",inProgress:false},
 		{name:"C#", percent:"80%",inProgress:false},
-		{name:"Javascript/jQuery", percent:"70%",inProgress:true},
-		{name:"HTML/CSS", percent:"75%",inProgress:false},
-		{name:"Java", percent:"80%",inProgress:false},
+		{name:"Javascript/jQuery", percent:"75%",inProgress:true},
+		{name:"HTML/CSS", percent:"70%",inProgress:false},
+		{name:"Java", percent:"70%",inProgress:false},
 		{name:"Shellscript", percent:"60%",inProgress:false}//,
 		//{name:"Python", percent:"65%",inProgress:false}
 	];
@@ -22,6 +22,36 @@ function SkillsController($scope){
 		{name:"NodeJS", percent:"10%",inProgress:true}
 	];
 
+	$scope.skillBucket = [
+		{name:"Python"},
+		{name:"JSON"},
+		{name:"mySQL"},
+		{name:"ASM"},
+		{name:"Bash"},
+		{name:"HLSL"},
+		{name:"GLSL"},
+		{name:"Mocha"},
+		{name:"Unity"},
+		{name:"OpenGL"},
+		{name:"DirectX"},
+		{name:"JS Hint"},
+		{name:"CasperJS"},
+		{name:"Bower"},
+		{name:"Grunt"},
+		{name:"TestNG"},
+		{name:"PhantomJS"},
+		{name:"PHP"},
+		{name:"Ruby"},
+		{name:"Jira"},
+		{name:"Trello"},
+		{name:"IntelliJ"},
+		{name:"Visual Studio"},
+		{name:"Android"},
+		{name:"Windows Phone"},
+		{name:"Photoshop"},
+		{name:"Maya & 3Ds Max"}
+	];
+
 	// Display the full description of a tool or language.
 	// index: index of the item clicked
 	// name: name of the item clicked (to look up info)
@@ -30,7 +60,6 @@ function SkillsController($scope){
 		$scope.languageDisplay.name = name;
 		$scope.languageDisplay.yearsUsed = info.yearsUsed;
 		$scope.languageDisplay.projects = info.projects;
-		$scope.languageDisplay.lines = info.lines;
 		$scope.languageDisplay.description = info.description;
 	};
 
@@ -55,43 +84,36 @@ function SkillsController($scope){
 		"C/C++":{
 			yearsUsed:"4",
 			projects:"4",
-			lines:"20,000+",
 			description:"My fundamentals were learned in C and all 4 years of college involved heavy use of C++, averaging around 4000+ lines per semester. Along with typical course assignments, I worked on 4 year-long projects with several different teams. It's been 7 months since my last major C++ project. "
 		},
 		"C#":{	
 			yearsUsed:"1.5",
 			projects:"3",
-			lines:"3000 - 5000",
 			description:"I started using C# my senior year of school to script games in Unity. Outside of school, when I felt more comfortable with both Unity anc C#, I worked on this 48 hour game jam: [Survaillent], as one of two programmers, as well as some Windows phone apps. I then spent a few months studying C# via this <a href='http://www.amazon.com/2010-NET-Platform-Experts-Voice/dp/1430225491/ref=sr_1_2?ie=UTF8&qid=1406566860&sr=8-2&keywords=pro+c%23'>book</a> and applying what I learned to several (50+) interview questions."
 		},
 		"Javascript/jQuery":{ 	
 			yearsUsed:"0.15",
 			projects:"2 / Professional Experience",
-			lines:"500 - 1500", 
 			description:"I've just recently started using Javascript on a professional level. With the help of co-workers (professional front end developers) I'm learning quickly, and am already contributing on a professional level. Too see all the books I've read and projects I've completed in the past two months, view my summary <here>. One of the professional projects I share ownership of is written entirely in JS. "
 		},
 		"HTML/CSS":{	
 			yearsUsed:"1",
 			projects:"3 / Professional Exposure",
-			lines:"1000 - 2000",
 			description:"My current job involves writing automated tests for a web service, so I'm extremely comfortable with HTML and CSS. I've only started using it to develop my own projects recently, but after professional exposure, there was almost no learning curve. I am familiar with other CSS languages like LESS and SASS, but have not cared to dive deeper into styling for now."
 		},
 		"Java":{		
 			yearsUsed:"0.5",
 			projects:"1 / Professional Experience",
-			lines:"5000 - 10,000",
 			description:"I've been using Java since day one at my current job. Other than a few easily google-able syntactical differences, I had no trouble jumping in after using C/C++ and C#. (Although, it's worth noting that I use Java for test automation, so I'm proficient with daily use, but not the ins and outs of the language.) The main project I currently own at work is written in Java."
 		},
 		"Shellscript":{
 			yearsUsed:"1",
 			projects:"3 / Professional Experience",
-			lines:"500 - 1000",
 			description:"I'm no pro, but I know Shell well enough to complete a task. I've used this at work to write our CI test runner, as well as at school for a few projects. I'm also familiar with bash, but have not directly applied it on a professional level."
 		},
 		"Python":{
 			yearsUsed:"1",
 			projects:"2 / Professional Experience",
-			lines:"2000 - 3000",
 			description:"I started learning Python for fun during school in order to familiarize myself with a scripting language. This opened my eyes to how easy quick projects could be and I immediately started applying it in my math courses. During my 3 month internship, Python was my primary language, and I've continued to use it in small doses at work since then."
 		},
 		"Git":{
@@ -131,7 +153,6 @@ function SkillsController($scope){
 		name:$scope.languages[0].name,
 		yearsUsed:self.descriptions[$scope.languages[0].name].yearsUsed,
 		projects:self.descriptions[$scope.languages[0].name].projects,
-		lines:self.descriptions[$scope.languages[0].name].lines,
 		description:self.descriptions[$scope.languages[0].name].description
 	};
 

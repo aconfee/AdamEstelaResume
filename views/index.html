@@ -17,7 +17,7 @@
 	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 	<!-- My js controllers -->
-	<script src='../controllers/main.js'></script>
+	<script src='../controllers/skills.js'></script>
 
 	<script>
 	  $(document).ready(function(){
@@ -157,37 +157,35 @@
 			</header>
 		</div>
 		<div class='row section'>
-			<div class='col-xs-4 col-xs-offset-2'>
+			<div class='col-xs-3 col-xs-offset-2'>
 				<p class='text-header'>LANGUAGES</p>
 				<div class="progress" ng-class="{'progress-selected': $index == selectedLanguage}" ng-repeat='language in languages' ng-click='displayLanguageDescription(language.name); insetLanguageBar($index);'>
-				  <div class="progress-bar progress-bar-success progress-bar-custom" ng-class="{'progress-selected': $index == selectedLanguage, 'progress-bar-striped active': language.inProgress}" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:{{ language.percent }}">
-				    <p class='progress-bar-text'>{{ language.name }}</p>
+				  <div class="progress-bar progress-bar-success" ng-class="{'progress-selected': $index == selectedLanguage, 'progress-bar-striped active': language.inProgress}" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:{{ language.percent }}">
+				    <p>{{ language.name }}</p>
 				  </div>
 				</div>
 			</div>
-			<div class='col-xs-4 right-align'>
+			<div class='col-xs-4 col-xs-offset-1 right-align'>
 				<p class='text-header'>{{ languageDisplay.name }}</p>
 				<p class='text'>
 					<span class='skill-attribute'>Years Actively Used:</span> <b>{{ languageDisplay.yearsUsed }}</b>
 					<br/>
 					<span class='skill-attribute'>Major Projects Used:</span> <b>{{ languageDisplay.projects }}</b>
 					<br/>
-					<span class='skill-attribute'>Approxomite Line Count:</span> <b>{{ languageDisplay.lines }}</b>
-					<br/>
 					<p class='left-align attribute-description'>{{ languageDisplay.description }}</p>
 				</p>
 			</div>
 		</div>
 		<div class='row section'>
-			<div class='col-xs-4 col-xs-offset-2'>
+			<div class='col-xs-3 col-xs-offset-2'>
 				<p class='text-header'>TOOLS</p>
 				<div class="progress" ng-class="{'progress-selected': $index == selectedTool}" ng-repeat='tool in tools' ng-click='displayToolDescription(tool.name); insetToolBar($index);'>
-				  <div class="progress-bar progress-bar-success progress-bar-custom" ng-class="{'progress-selected': $index == selectedTool, 'progress-bar-striped active': tool.inProgress}" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:{{ tool.percent }}">
-				    <p class='progress-bar-text'>{{ tool.name }}</p>
+				  <div class="progress-bar progress-bar-success" ng-class="{'progress-selected': $index == selectedTool, 'progress-bar-striped active': tool.inProgress}" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:{{ tool.percent }}">
+				    <p>{{ tool.name }}</p>
 				  </div>
 				</div>
 			</div>
-			<div class='col-xs-4 right-align'>
+			<div class='col-xs-4 col-xs-offset-1 ight-align'>
 				<p class='text-header'>{{ toolDisplay.name }}</p>
 				<p class='text'>
 					<span class='skill-attribute'>Years Actively Used:</span> <b>{{ toolDisplay.yearsUsed }}</b>
@@ -203,32 +201,7 @@
 				<p class='text-header'>ADDITIONAL EXPOSURE</p>
 			</div>
 			<div class='col-xs-8 col-xs-offset-2'>
-				<span class="well well-sm">Python</span>
-				<span class="well well-sm">JSON</span>
-				<span class="well well-sm">mySQL</span>
-				<span class="well well-sm">ASM</span>
-				<span class="well well-sm">Bash</span>
-				<span class="well well-sm">HLSL</span>
-				<span class="well well-sm">GLSL</span>
-				<span class="well well-sm">Mocha</span>
-				<span class="well well-sm">Unity</span>
-				<span class="well well-sm">OpenGL</span>
-				<span class="well well-sm">DirectX</span>
-				<span class="well well-sm">JS Hint</span>
-				<span class="well well-sm">CasperJS</span>
-				<span class="well well-sm">Bower</span>
-				<span class="well well-sm">Grunt</span>
-				<span class="well well-sm">TestNG</span>
-				<span class="well well-sm">PhantomJS</span>
-				<span class="well well-sm">PHP</span>
-				<span class="well well-sm">Ruby</span>
-				<span class="well well-sm">Jira</span>
-				<span class="well well-sm">Trello</span>
-				<span class="well well-sm">IntelliJ</span>
-				<span class="well well-sm">Visual Studio</span>
-				<span class="well well-sm">Android</span>
-				<span class="well well-sm">Windows Phone</span>
-				<span class="well well-sm">Maya / 3ds Max</span>
+				<span class="well well-sm" ng-repeat='otherSkill in skillBucket'>{{ otherSkill.name }}</span>
 			</div>
 		</div>
 	</div>
@@ -287,7 +260,8 @@
 						<li><p>Game Implementation Techniques [Building a game engine]</p></li>
 						<li><p>English</p></li>
 					</ul>
-					I also served as the academic support tutor for CS, Mathematics, and English where I patiently assisted students through problems, aided in debugging, explained concepts, and offered encouragement.</p>
+					I also served as the academic support tutor for CS, Mathematics, and English where I patiently assisted students through problems, aided in debugging, explained concepts, and offered encouragement.
+				</p>
 			</div>
 		</div>
 	</div>
@@ -302,8 +276,22 @@
 		<div class='row'>
 			<div class='col-xs-4 col-xs-offset-4 text-center section'>
 				<button type="button" class="btn btn-default">All</button>
-				<button type="button" class="btn btn-default">Games</button>
-				<button type="button" class="btn btn-default">Web</button>
+				<button type="button" class="btn btn-default">Red</button>
+				<button type="button" class="btn btn-default">Yellow</button>
+				<button type="button" class="btn btn-default">Blue</button>
+			</div>
+		</div>
+		<div class='row text-center'>
+			<div class='portfolio-items section'>
+					<div class='portfolio-item red'></div>
+					<div class='portfolio-item yellow'></div>
+					<div class='portfolio-item red'></div>
+					<div class='portfolio-item red'></div>
+					<div class='portfolio-item blue'></div>
+					<div class='portfolio-item blue'></div>
+					<div class='portfolio-item red'></div>
+					<div class='portfolio-item red'></div>
+				</div>
 			</div>
 		</div>
 	</div>
