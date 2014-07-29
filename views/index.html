@@ -166,7 +166,7 @@
 				</div>
 			</div>
 			<div class='col-xs-4 right-align'>
-				<p class='text-header'>C/C++</p>
+				<p class='text-header'>{{ languageDisplay.name }}</p>
 				<p class='text'>
 					<span class='skill-attribute'>Years Actively Used:</span> <b>{{ languageDisplay.yearsUsed }}</b>
 					<br/>
@@ -188,15 +188,13 @@
 				</div>
 			</div>
 			<div class='col-xs-4 right-align'>
-				<p class='text-header'>Git</p>
+				<p class='text-header'>{{ toolDisplay.name }}</p>
 				<p class='text'>
-					<span class='skill-attribute'>Years Actively Used:</span> <b>0.6</b>
+					<span class='skill-attribute'>Years Actively Used:</span> <b>{{ toolDisplay.yearsUsed }}</b>
 					<br/>
-					<span class='skill-attribute'>Major Projects Used:</span> <b>4</b>
+					<span class='skill-attribute'>Major Projects Used:</span> <b>{{ toolDisplay.projects }}</b>
 					<br/>
-					<p class='left-align attribute-description'>
-					I've been using Git/Github professionally, as well as with side projects. At work, our branching model is similar to the following: <a target="_blank" href='http://nvie.com/posts/a-successful-git-branching-model/'>workflow</a>.
-					</p>
+					<p class='left-align attribute-description'>{{ toolDisplay.description }}</p>
 				</p>
 			</div>
 		</div>
