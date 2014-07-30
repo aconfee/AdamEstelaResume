@@ -15,9 +15,12 @@
 	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 	<!-- Javascript for bootstrap -->
 	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- Isotope filtering -->
+	<script src="../js/isotope.min.js"></script>
 
 	<!-- My js controllers -->
 	<script src='../controllers/skills.js'></script>
+	<script src='../controllers/portfolio.js'></script>
 
 	<script>
 	  $(document).ready(function(){
@@ -265,7 +268,7 @@
 			</div>
 		</div>
 	</div>
-	<div class='container-fluid screen' id='portfolio-screen'>
+	<div class='container-fluid screen' id='portfolio-screen' ng-controller='PortfolioController'>
 		<div class='row'>
 			<header class='col-xs-12 text-center section-title'>
 				<h1>PORTFOLIO</h1>
@@ -275,10 +278,10 @@
 		</div>
 		<div class='row'>
 			<div class='col-xs-4 col-xs-offset-4 text-center section'>
-				<button type="button" class="btn btn-default">All</button>
-				<button type="button" class="btn btn-default">Red</button>
-				<button type="button" class="btn btn-default">Yellow</button>
-				<button type="button" class="btn btn-default">Blue</button>
+				<button ng-click='filterPortfolio("*")' data-filter='*' type="button" class="btn btn-default">All</button>
+				<button ng-click='filterPortfolio(".red")' data-filter='.red' type="button" class="btn btn-default">Red</button>
+				<button ng-click='filterPortfolio(".yellow")' data-filter='.yellow' type="button" class="btn btn-default">Yellow</button>
+				<button ng-click='filterPortfolio(".blue")' data-filter='.blue' type="button" class="btn btn-default">Blue</button>
 			</div>
 		</div>
 		<div class='row text-center'>
