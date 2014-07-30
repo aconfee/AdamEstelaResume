@@ -15,8 +15,9 @@
 	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 	<!-- Javascript for bootstrap -->
 	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<!-- Isotope filtering -->
-	<script src="../js/isotope.min.js"></script>
+
+	<!-- Isotope (filtering) -->
+	<script src="../tools/isotope/isotope.min.js"></script>
 
 	<!-- My js controllers -->
 	<script src='../controllers/skills.js'></script>
@@ -279,21 +280,22 @@
 		<div class='row'>
 			<div class='col-xs-4 col-xs-offset-4 text-center section'>
 				<button ng-click='filterPortfolio("*")' data-filter='*' type="button" class="btn btn-default">All</button>
-				<button ng-click='filterPortfolio(".red")' data-filter='.red' type="button" class="btn btn-default">Red</button>
-				<button ng-click='filterPortfolio(".yellow")' data-filter='.yellow' type="button" class="btn btn-default">Yellow</button>
-				<button ng-click='filterPortfolio(".blue")' data-filter='.blue' type="button" class="btn btn-default">Blue</button>
+				<button ng-click='filterPortfolio(".games")' data-filter='.games' type="button" class="btn btn-default">Games</button>
+				<button ng-click='filterPortfolio(".web")' data-filter='.web' type="button" class="btn btn-default">Web</button>
+				<button ng-click='filterPortfolio(".graphics")' data-filter='.graphics' type="button" class="btn btn-default">Graphics</button>
+				<button ng-click='filterPortfolio(".ai")' data-filter='.ai' type="button" class="btn btn-default">Artificial Intelligence</button>
 			</div>
 		</div>
 		<div class='row text-center'>
 			<div class='portfolio-items section'>
-					<div class='portfolio-item red'></div>
-					<div class='portfolio-item yellow'></div>
-					<div class='portfolio-item red'></div>
-					<div class='portfolio-item red'></div>
-					<div class='portfolio-item blue'></div>
-					<div class='portfolio-item blue'></div>
-					<div class='portfolio-item red'></div>
-					<div class='portfolio-item red'></div>
+					<div class='portfolio-item games'></div>
+					<div class='portfolio-item web'></div>
+					<div class='portfolio-item games'></div>
+					<div class='portfolio-item games'></div>
+					<div class='portfolio-item graphics'></div>
+					<div class='portfolio-item graphics'></div>
+					<div class='portfolio-item games'></div>
+					<div class='portfolio-item games'></div>
 				</div>
 			</div>
 		</div>
