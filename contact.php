@@ -7,7 +7,6 @@
     echo "$email ";
     $message = $_POST['message'];
     echo "$message ";
-    $from = 'From: Resume'; 
     $to = 'adamestela@gamil.com'; 
     $subject = 'Resume Inquery';
     //$human = $_POST['human'];
@@ -19,13 +18,14 @@
     {				
         echo '<p>sending...</p>'; 
 
-        if (mail ($to, $subject, $body, $from)) 
+        if (mail ($to, $subject, $body)) 
         { 
 	       echo '<p>Your message has been sent!</p>';
 	    } 
         else 
         { 
 	       echo '<p>Something went wrong, go back and try again!</p>'; 
+           print_r(error_get_last());
         }
 	}  
 ?>
