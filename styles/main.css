@@ -178,10 +178,10 @@ h2{
 	height:30px;
 	box-shadow: 3px 3px 5px #888888;
 
-	-webkit-transition: 0.2s ease-in-out;
-    -moz-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
+	-webkit-transition: 0.1s ease-in-out;
+    -moz-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 .progress:hover{
@@ -222,37 +222,21 @@ h2{
 	word-break:break-word;
 }
 
-.games{
-	background-color: red;
-}
-
-.web{
-	background-color: yellow;
-}
-
-.graphics{
-	background-color: blue;
-}
-
 .portfolio-item{
 	width:243px;
-	/*width:200px;*/
 	height:150px;
 	margin: 20px 15px;
 	display:inline-block;
 	float:left;
 
-	/*
-	v-webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    */
+	background-color:#3498db;
 
 	-webkit-transition: 0.2s ease-in-out;
     -moz-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
+
+    overflow: hidden;
 }
 
 .portfolio-item:hover{
@@ -261,21 +245,37 @@ h2{
 
 .portfolio-items{
 	width:90%;
-	height:auto;
 
 	display: inline-block;
 
-/*
-	max-width: 920px;
-	*/
-
-	max-width:819px;
+	max-width:1092px;
 }
 
 .portfolio-tab{
-	width:auto;
-	height:30px;
+	height:auto;
+	max-height: 50px;
+	overflow: hidden;
+	display: inline-block;
+	color:white;
+	font-weight: bold;
 
-	float:bottom;
+	float:left;
+
+	margin: 7px 5px;
+	padding:0px 10px;
 }
 
+.portfolio-tab-right{
+	float:right;
+}
+
+.portfolio-tab:hover{
+	background-color: #2978ad;
+	text-decoration: none;
+	color:white;
+}
+
+.portfolio-tab:visited{
+	text-decoration: none;
+	color:white;
+}
