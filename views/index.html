@@ -218,7 +218,7 @@
 		</div>
 		<div class='row section'>
 			<div class='col-xs-2 col-xs-offset-2'>
-				<img src="../resources/digi-logo.png" class="img-responsive">
+				<a href='https://www.digipen.edu/' target='_blank'><img src="../resources/digi-logo.png" class="img-responsive"></a>
 			</div>
 			<div class='col-xs-6 text'>
 				<span class='text-header'>
@@ -238,8 +238,8 @@
 		</div>
 		<div class='section'>
 			<div class='col-xs-4 col-xs-offset-2 text'>
-				<span class='text-header'>
-					PaperG
+				<span>
+					<a class='text-header' href='http://www.paperg.com/' target='_blank'>PaperG</a>
 				</span><span>Kirkland, WA</span>
 				<p>Software Engineer in Test II / Feb 2013 - Current</p>
 				<p>
@@ -254,8 +254,8 @@
 				</p>
 			</div>
 			<div class='col-xs-4 text'>
-				<span class='text-header'>
-					DigiPen Institute of Technology
+				<span>
+					<a class='text-header' href='https://www.digipen.edu/' target='_blank'>DigiPen Institute of Technology</a>
 				</span><span>Redmond, WA</span>
 				<p>Teaching Assistant and Tutor / Jan 2012 - Dec 2013</p>
 				<p>While working towards my degree, I was a TA for:
@@ -340,8 +340,44 @@
 			<header class='col-xs-12 text-center section-title'>
 				<h1 class='inverse'>CONTACT</h1>
 				<div class='underline underline-inverse'></div>
-				<h2 class='inverse'>Call Me... and tell me everything will be ok.</h2>
+				<h2 class='inverse'>Currently interested in work opportunities.</h2>
 			</header>
+		</div>
+		<div class='row'>
+			<div class='col-xs-3 col-xs-offset-2 section'>
+				<h2 style='color:white'><b>Contact Info</b></h2>
+				<p class='text' style='color:white'>1321 Minor Ave #B504, Seattle, WA 98101</p>
+				<p class='text' style='color:white'>(509) 494-4676</p>
+				<p class='text' style='color:white'>adamestela@gmail.com</p>
+			</div>
+			<div class='col-xs-4 col-xs-offset-1 section'>
+				<h2 style='color:white'><b>Let's chat!</b></h2>
+				<form class="form-horizontal" role="form" method='post' action='../contact.php'>
+				<div class="form-group">
+				    <label for="contactName" class="col-xs-1 control-label">Name</label>
+				    <div class="col-xs-12">
+				      <input name='name' type="text" class="form-control" id="contactName" placeholder="Your Name">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="contactEmail" class="col-xs-1 control-label">Email</label>
+				    <div class="col-xs-12">
+				      <input name='email' type="email" class="form-control" id="contactEmail" placeholder="Email">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputPassword3" class="col-xs-1 control-label">Message</label>
+				    <div class="col-xs-12">
+				    	<textarea name='message' class="form-control" rows="8"></textarea>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-xs-12">
+				      <button id='send-email-button' type="submit" class="btn btn-default btn-lg">Send Message</button>
+				    </div>
+				  </div>
+				</form>
+			</div>
 		</div>
 	</div>
 </body>

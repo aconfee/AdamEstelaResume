@@ -7,6 +7,7 @@ body{
 	background-attachment: fixed;
 }
 
+/* NAVBAR */
 .navbar-default{
 	background-color:white;
 	opacity: .85;
@@ -46,6 +47,7 @@ body{
 	margin-right:auto;
 }
 
+/* COVER */ 
 #cover-screen{
 	margin-bottom:10%;
 }
@@ -124,6 +126,7 @@ h2{
 	margin-bottom: 10em;
 }
 
+/* PAGE */
 .text-header{
 	font-size: 1.4em;
 	font-weight: bold;
@@ -165,6 +168,7 @@ h2{
 	color:white;
 }
 
+/* SKILLS */
 .progress-bar{
 	text-align: left;
 }
@@ -222,6 +226,7 @@ h2{
 	word-break:break-word;
 }
 
+/* PORTFOLIO */
 .portfolio-item{
 	width:243px;
 	height:150px;
@@ -278,4 +283,37 @@ h2{
 .portfolio-tab:visited{
 	text-decoration: none;
 	color:white;
+}
+
+/* CONTACT FORM*/ 
+.control-label{
+	color:white;
+	display:block;
+}
+
+.form-control{
+	height:50px;
+	border-radius: 0;
+}
+
+#send-email-button{
+	border: 2px solid white;
+	border-radius: 0;
+	color:white;
+	font-weight: bold;
+	float:right;
+	background-color: #3498DB;
+	width:100%;
+	margin-top:20px; 
+	letter-spacing: .3em;
+
+	-webkit-transition: 0.1s ease-in-out;
+    -moz-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+}
+
+#send-email-button:hover{
+	background-color: white;
+	color: #3498DB;
 }
