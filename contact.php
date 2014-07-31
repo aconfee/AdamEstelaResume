@@ -1,12 +1,11 @@
 <?php
-    echo '<p>doing stuff...</p>';
-
     $name = $_POST['name'];
     echo "$name ";
     $email = $_POST['email'];
     echo "$email ";
     $message = $_POST['message'];
     echo "$message ";
+    $from = 'From: My Resume';
     $to = 'adamestela@gamil.com'; 
     $subject = 'Resume Inquery';
     //$human = $_POST['human'];
@@ -18,7 +17,7 @@
     {				
         echo '<p>sending...</p>'; 
 
-        if (mail ($to, $subject, $body)) 
+        if (mail ($to, $subject, $body, $from)) 
         { 
 	       echo '<p>Your message has been sent!</p>';
 	    } 
