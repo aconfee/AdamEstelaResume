@@ -189,7 +189,7 @@
 				  </div>
 				</div>
 			</div>
-			<div class='col-xs-4 col-xs-offset-1 ight-align'>
+			<div class='col-xs-4 col-xs-offset-1 right-align'>
 				<p class='text-header'>{{ toolDisplay.name }}</p>
 				<p class='text'>
 					<span class='skill-attribute'>Years Actively Used:</span> <b>{{ toolDisplay.yearsUsed }}</b>
@@ -278,7 +278,7 @@
 			</header>
 		</div>
 		<div class='row'>
-			<div class='col-xs-4 col-xs-offset-4 text-center section'>
+			<div class='col-xs-8 col-xs-offset-2 text-center section'>
 				<button ng-click='filterPortfolio("*")' data-filter='*' type="button" class="btn btn-default">All</button>
 				<button ng-click='filterPortfolio(".games")' data-filter='.games' type="button" class="btn btn-default">Games</button>
 				<button ng-click='filterPortfolio(".web")' data-filter='.web' type="button" class="btn btn-default">Web</button>
@@ -288,8 +288,14 @@
 		</div>
 		<div class='row text-center'>
 			<div class='portfolio-items section'>
-					<div class='portfolio-item games'></div>
-					<div class='portfolio-item web'></div>
+					<div class='portfolio-item games'>
+						<!--img class='img-responsive' src='../resources/portfolio/luminosity.png'></img-->
+					</div>
+					<div class='portfolio-item web' ng-mouseenter='itemHover=true;' ng-mouseleave='itemHover=false;'>
+						<span class='portfolio-tab' ng-show='itemHover'>Live</span>
+						<span class='portfolio-tab' ng-show='itemHover'>Git</span>
+						<span class='portfolio-tab' ng-show='itemHover'>More</span>
+					</div>
 					<div class='portfolio-item games'></div>
 					<div class='portfolio-item games'></div>
 					<div class='portfolio-item graphics'></div>
