@@ -22,6 +22,7 @@
 	<!-- My js controllers -->
 	<script src='../controllers/skills.js'></script>
 	<script src='../controllers/portfolio.js'></script>
+	<script src='../controllers/nav.js'></script>
 
 	<script>
 	  $(document).ready(function(){
@@ -48,14 +49,14 @@
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav" id='main-menu'>
-	        <li class='active'><a href="#cover-screen">Home</a></li>
-	        <li><a href="#overview-screen">Overview</a></li>
-	        <li><a href="#skills-screen">Skills</a></li>
-	        <li><a href="#education-screen">Education</a></li>
-	        <li><a href="#experience-screen">Experience</a></li>
-	        <li><a href="#portfolio-screen">Portfolio</a></li>
-	        <li><a href="#contact-screen">Contact</a></li>
+	      <ul class="nav navbar-nav" id='main-menu' ng-controller='NavController'>
+	        <li ng-click='scrollToSection("#cover-screen")'class='active'><a>Home</a></li>
+	        <li ng-click='scrollToSection("#overview-screen")'><a>Overview</a></li>
+	        <li ng-click='scrollToSection("#skills-screen")'><a>Skills</a></li>
+	        <li ng-click='scrollToSection("#education-screen")'><a>Education</a></li>
+	        <li ng-click='scrollToSection("#experience-screen")'><a>Experience</a></li>
+	        <li ng-click='scrollToSection("#portfolio-screen")'><a>Portfolio</a></li>
+	        <li ng-click='scrollToSection("#contact-screen")'><a>Contact</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
