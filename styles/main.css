@@ -91,7 +91,7 @@ h2{
 	width:3.4em;
 	height:3.4em;
 
-	border-radius: 50%;
+	border-radius: 30%;
 	border-width: 1px;
 	border-color: white;
 	border-style: solid;
@@ -317,6 +317,19 @@ h2{
 .portfolio-tab:visited{
 	text-decoration: none;
 	color:white;
+}
+
+.btn-default{
+
+	-webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-default:hover{
+	background-color:#3498DB; 
+	color: white;
 }
 
 /* CONTACT FORM*/ 
