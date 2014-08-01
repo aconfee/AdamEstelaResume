@@ -1,4 +1,11 @@
 <?php
+    // Please specify your Mail Server - Example: mail.yourdomain.com.
+    ini_set("SMTP","adamestela@gmail.com");
+    // Please specify an SMTP Number 25 and 8889 are valid SMTP Ports.
+    ini_set("smtp_port","25");
+    // Please specify the return address to use
+    ini_set('sendmail_from', 'adamestela@gmail.com');
+
     $name = $_POST['name'];
     echo "$name ";
     $email = $_POST['email'];
@@ -20,6 +27,8 @@
         if (mail ($to, $subject, $body, $from)) 
         { 
 	       echo '<p>Your message has been sent!</p>';
+           header("Location: http://adamestelaresume.azurewebsites.net/");
+            exit;
 	    } 
         else 
         { 
