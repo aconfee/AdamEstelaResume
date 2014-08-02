@@ -8,7 +8,7 @@ function SkillsController($scope){
 		{name:"C/C++", val:'90', percent:{width: "90%"},inProgress:false},
 		{name:"C#", val:'75', percent:{width: "75%"},inProgress:false},
 		{name:"Javascript/jQuery", val:'75', percent:{width: "75%"},inProgress:true},
-		{name:"HTML/CSS", val:'65', percent:{width: "65%"},inProgress:false},
+		{name:"HTML/CSS", val:'65', percent:{width: "65%"},inProgress:true},
 		{name:"Java", val:'60', percent:{width: "60%"},inProgress:false},
 		//{name:"Shellscript", percent:"60%",inProgress:false}//,
 		{name:"Python", val:'40', percent:{width: "40%"},inProgress:false}
