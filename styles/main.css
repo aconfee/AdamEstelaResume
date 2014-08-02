@@ -113,6 +113,14 @@ h2{
 	background-color:white;
 }
 
+.icon:visited{
+	text-decoration: none;
+}
+
+.icon:active{
+	text-decoration: none;
+}
+
 #git-icon{
 	background-image: url('http://i.imgur.com/2myXYps.png?1');
 }
@@ -210,6 +218,10 @@ h2{
 .progress-bar p{
 	margin-left: 20px;
 	margin-top: 4px;
+}
+
+.progress-bar-success{
+	background-color: green;
 }
 
 .progress{

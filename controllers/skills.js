@@ -2,24 +2,27 @@ function SkillsController($scope){
 	var self = this;
 	$scope.selectedLanguage = 0;
 	$scope.selectedTool = 0;
+	$scope.showTip = true;
 
 	$scope.languages = [
-		{name:"C/C++", percent:"90%",inProgress:false},
-		{name:"C#", percent:"80%",inProgress:false},
-		{name:"Javascript/jQuery", percent:"75%",inProgress:true},
-		{name:"HTML/CSS", percent:"70%",inProgress:false},
-		{name:"Java", percent:"70%",inProgress:false},
-		{name:"Shellscript", percent:"60%",inProgress:false}//,
-		//{name:"Python", percent:"65%",inProgress:false}
+		{name:"C/C++", val:'90', percent:{width: "90%"},inProgress:false},
+		{name:"C#", val:'80', percent:{width: "80%"},inProgress:false},
+		{name:"Javascript/jQuery", val:'75', percent:{width: "75%"},inProgress:true},
+		{name:"HTML/CSS", val:'70', percent:{width: "70%"},inProgress:false},
+		{name:"Java", val:'70', percent:{width: "70%"},inProgress:false},
+		//{name:"Shellscript", percent:"60%",inProgress:false}//,
+		{name:"Python", val:'65', percent:{width: "65%"},inProgress:false}
 	];
 
+	$scope.mystyle = {width: $scope.languages[0].percent};
+
 	$scope.tools = [
-		{name:"Git", percent:"85%",inProgress:false},
-		{name:"Selenium Web Driver", percent:"90%",inProgress:false},
-		{name:"Strider Continuous Integration", percent:"80%",inProgress:false},
-		{name:"AngularJS", percent:"60%",inProgress:true},
-		{name:"Azure", percent:"20%",inProgress:true},
-		{name:"NodeJS", percent:"10%",inProgress:true}
+		{name:"Git", val:'85', percent:{width: "85%"},inProgress:false},
+		{name:"Selenium Web Driver", val:'90', percent:{width: "90%"},inProgress:false},
+		{name:"Strider Continuous Integration", val:'80', percent:{width: "80%"},inProgress:false},
+		{name:"AngularJS", val:'60', percent:{width: "60%"},inProgress:true},
+		{name:"Azure", val:'20', percent:{width: "20%"},inProgress:true},
+		{name:"NodeJS", val:'10', percent:{width: "10%"},inProgress:true}
 	];
 
 	$scope.skillBucket = [
@@ -52,6 +55,10 @@ function SkillsController($scope){
 		{name:"Maya & 3Ds Max"}
 	];
 
+	$scope.hideTip = function(){
+		$scope.showTip = false;
+	};
+	
 	// Display the full description of a tool or language.
 	// index: index of the item clicked
 	// name: name of the item clicked (to look up info)
