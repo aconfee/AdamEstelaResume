@@ -3,7 +3,7 @@
     print_r(error_get_last());
 
     // Pear Mail Library
-    require_once "Mail.php";
+    require_once('Mail.php');
 
     print_r(error_get_last());
     echo "included mailphp";
