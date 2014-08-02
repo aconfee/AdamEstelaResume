@@ -6,12 +6,12 @@ function SkillsController($scope){
 
 	$scope.languages = [
 		{name:"C/C++", val:'90', percent:{width: "90%"},inProgress:false},
-		{name:"C#", val:'80', percent:{width: "80%"},inProgress:false},
+		{name:"C#", val:'75', percent:{width: "75%"},inProgress:false},
 		{name:"Javascript/jQuery", val:'75', percent:{width: "75%"},inProgress:true},
-		{name:"HTML/CSS", val:'70', percent:{width: "70%"},inProgress:false},
-		{name:"Java", val:'70', percent:{width: "70%"},inProgress:false},
+		{name:"HTML/CSS", val:'65', percent:{width: "65%"},inProgress:false},
+		{name:"Java", val:'60', percent:{width: "60%"},inProgress:false},
 		//{name:"Shellscript", percent:"60%",inProgress:false}//,
-		{name:"Python", val:'65', percent:{width: "65%"},inProgress:false}
+		{name:"Python", val:'40', percent:{width: "40%"},inProgress:false}
 	];
 
 	$scope.mystyle = {width: $scope.languages[0].percent};
@@ -26,7 +26,7 @@ function SkillsController($scope){
 	];
 
 	$scope.skillBucket = [
-		{name:"Python"},
+		{name:"Shellscript"},
 		{name:"JSON"},
 		{name:"mySQL"},
 		{name:"ASM"},
@@ -58,7 +58,7 @@ function SkillsController($scope){
 	$scope.hideTip = function(){
 		$scope.showTip = false;
 	};
-	
+
 	// Display the full description of a tool or language.
 	// index: index of the item clicked
 	// name: name of the item clicked (to look up info)
@@ -91,27 +91,27 @@ function SkillsController($scope){
 		"C/C++":{
 			yearsUsed:"4",
 			projects:"4",
-			description:"My fundamentals were learned in C and all 4 years of college involved heavy use of C++, averaging around 4000+ lines per semester. Along with typical course assignments, I worked on 4 year-long projects with several different teams. It's been 7 months since my last major C++ project. "
+			description:"My fundamentals were learned in C and all 4 years of college involved heavy use of C++. Along with typical course assignments, I worked on 4 year-long projects with several different teams. It's been 7 months since my last major C++ project. "
 		},
 		"C#":{	
 			yearsUsed:"1.5",
 			projects:"3",
-			description:"I started using C# my senior year of school to script games in Unity. Outside of school, when I felt more comfortable with both Unity anc C#, I worked on this 48 hour game jam: [Survaillent], as one of two programmers, as well as some Windows phone apps. I then spent a few months studying C# via this <a href='http://www.amazon.com/2010-NET-Platform-Experts-Voice/dp/1430225491/ref=sr_1_2?ie=UTF8&qid=1406566860&sr=8-2&keywords=pro+c%23'>book</a> and applying what I learned to several (50+) interview questions."
+			description:"I started using C# my senior year of school to script games in Unity. Outside of school, when I felt more comfortable with both Unity anc C#, I worked on Survaillent during a 48 hour game jam (see in portfolio) as one of two programmers. I then spent a few months studying and practicing with the language."
 		},
 		"Javascript/jQuery":{ 	
 			yearsUsed:"0.15",
-			projects:"2 / Professional Experience",
-			description:"I've just recently started using Javascript on a professional level. With the help of co-workers (professional front end developers) I'm learning quickly, and am already contributing on a professional level. Too see all the books I've read and projects I've completed in the past two months, view my summary <here>. One of the professional projects I share ownership of is written entirely in JS. "
+			projects:"2 + Professional Experience",
+			description:"I've recently started using Javascript to contribute to work projects. In order to grow quicker, co-workers are reviewing my solo end-end side projects. I've spent the past two months tirelessly working on side projects in order to iterate fast, fail frequently, and gain experience."
 		},
 		"HTML/CSS":{	
 			yearsUsed:"1",
-			projects:"3 / Professional Exposure",
-			description:"My current job involves writing automated tests for a web service, so I'm extremely comfortable with HTML and CSS. I've only started using it to develop my own projects recently, but after professional exposure, there was almost no learning curve. I am familiar with other CSS languages like LESS and SASS, but have not cared to dive deeper into styling for now."
+			projects:"3 + Professional Exposure",
+			description:"My current job involves writing automated tests for a web service, so I'm extremely comfortable with HTML and CSS. I've recently started using it to develop my own projects, but after professional exposure, there was almost no learning curve. I am familiar with other CSS languages like LESS and SASS, but have not used them yet."
 		},
 		"Java":{		
 			yearsUsed:"0.5",
-			projects:"1 / Professional Experience",
-			description:"I've been using Java since day one at my current job. Other than a few easily google-able syntactical differences, I had no trouble jumping in after using C/C++ and C#. (Although, it's worth noting that I use Java for test automation, so I'm proficient with daily use, but not the ins and outs of the language.) The main project I currently own at work is written in Java."
+			projects:"Professional Experience",
+			description:"I've been using Java since day one at my current job. Other than a few easily google-able syntactical differences, I had no trouble jumping in after using C/C++ and C#. Although, it's worth noting that I use Java for test automation, so I'm proficient with trivial use, but not the ins and outs of the language."
 		},
 		"Shellscript":{
 			yearsUsed:"1",
@@ -120,18 +120,18 @@ function SkillsController($scope){
 		},
 		"Python":{
 			yearsUsed:"1",
-			projects:"2 / Professional Experience",
-			description:"I started learning Python for fun during school in order to familiarize myself with a scripting language. This opened my eyes to how easy quick projects could be and I immediately started applying it in my math courses. During my 3 month internship, Python was my primary language, and I've continued to use it in small doses at work since then."
+			projects:"1 + Professional Experience",
+			description:"I started learning Python for fun during school in order to familiarize myself with a scripting language. This opened my eyes to how easy and quick small projects could be. I immediately started applying it in my math courses, and used it almost exclusively during my 3 month internship for which Python was the engine's primary language. I've continued to use it when appropriate at work."
 		},
 		"Git":{
 			yearsUsed:"0.6",
-			projects:"4",
-			description:"I've been using Git/Github professionally, as well as with side projects. At work, our branching model is similar to the following: <a target='_blank' href='http://nvie.com/posts/a-successful-git-branching-model/'>workflow</a>."
+			projects:"3 + Professional Experience",
+			description:"Git/Github is my current repo at work. I'm familiar with different levels of branching for features/devs/production/etc."
 		},
 		"Selenium Web Driver":{
 			yearsUsed:"0.5",
 			projects:"Professional Experience",
-			description:"Automating tests with Selenium is my primary professional responsibility. I ramped up quickly and contributed a new test by my third day. I have since written an (actually) cross browser compatible, and dynamic site compatible wrapper library around Selenium. I was also promoted after 4 months for gaining ownership in this area so quickly as well as extending my responsibilities to several other areas."
+			description:"Automating tests with Selenium is my primary professional responsibility. I've written several tools around Selenium to make test feedback more accurate, easy to debug, and reliable. I was also promoted after 4 months for gaining ownership in this area so quickly as well as extending my responsibilities to several other areas."
 		},
 		"Strider Continuous Integration":{
 			yearsUsed:"0.5",
@@ -140,8 +140,8 @@ function SkillsController($scope){
 		},
 		"AngularJS":{
 			yearsUsed:"0.15",
-			projects:"2 / Professional Exposure",
-			description:"At the same time I dedicated myself to learning JS and building web apps, I learned AngularJS. I'm currently using it in my web projects... including this very description!"
+			projects:"2 + Professional Exposure",
+			description:"When I started building web apps, AngularJS was recommended to me. I'm exposed to it professionally, and use it frequently. This very description is data-bound using AngularJS!"
 		},
 		"Azure":{
 			yearsUsed:"0.15",
@@ -150,7 +150,7 @@ function SkillsController($scope){
 		},
 		"NodeJS":{
 			yearsUsed:"0.2",
-			projects:"1 / Professional Exposure",
+			projects:"Professional Exposure",
 			description:"I am actively learning and practicing NodeJS. I use a simple node server at work, and have implemented one of my own. I'm also familiar with, and frequently use, Node's package manager."
 		}
 	}

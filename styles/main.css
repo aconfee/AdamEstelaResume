@@ -242,7 +242,7 @@ h2{
 }
 
 .progress-selected{
-    box-shadow: inset 3px 3px 5px #275427;
+    box-shadow: inset 5px 5px 5px #275427;
 }
 
 .progress-selected:hover{
