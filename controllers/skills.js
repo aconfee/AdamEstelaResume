@@ -20,12 +20,14 @@ function SkillsController($scope){
 		{name:"Selenium Web Driver", val:'90', percent:{width: "90%"},inProgress:false},
 		{name:"Git", val:'85', percent:{width: "85%"},inProgress:false},
 		{name:"Strider Continuous Integration", val:'80', percent:{width: "80%"},inProgress:false},
-		{name:"AngularJS", val:'60', percent:{width: "60%"},inProgress:true},
-		{name:"Azure", val:'20', percent:{width: "20%"},inProgress:true},
-		{name:"NodeJS", val:'10', percent:{width: "10%"},inProgress:true}
+		{name:"AngularJS", val:'60', percent:{width: "60%"},inProgress:true}//,
+		//{name:"Azure", val:'20', percent:{width: "20%"},inProgress:true},
+		//{name:"NodeJS", val:'10', percent:{width: "10%"},inProgress:true}
 	];
 
 	$scope.skillBucket = [
+		{name:"NodeJS"},
+		{name:"Azure"},
 		{name:"Shellscript"},
 		{name:"JSON"},
 		{name:"mySQL"},
