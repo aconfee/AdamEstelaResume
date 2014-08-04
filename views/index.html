@@ -337,7 +337,7 @@
 			<header class='col-xs-12 text-center section-title'>
 				<h1 class='inverse'>CONTACT</h1>
 				<div class='underline underline-inverse'></div>
-				<h2 class='inverse'>Say hi!</h2>
+				<h2 class='inverse'>Currently interested in opportunities.</h2>
 			</header>
 		</div>
 		<div class='row'>
@@ -346,9 +346,13 @@
 				<p class='text' style='color:white'>1321 Minor Ave #B504, Seattle, WA 98101</p>
 				<p class='text' style='color:white'>(509) 494-4676</p>
 				<p class='text' style='color:white'>adamestela@gmail.com</p>
-				<div id='message-sent'>
+				<div id='message-sent' ng-show='messageSent'>
 					<h1 style='color:white;margin-top:100px;'>Message sent!</h1>
 					<h2 style='color:white;'>Thank you for visiting! I will respond as soon as possible.</h2>
+				</div>
+				<div id='message-sent' ng-show='messageError'>
+					<h1 style='color:white;margin-top:100px;'>Error</h1>
+					<h2 style='color:white;'>Please include your name, valid email, and a message.</h2>
 				</div>
 			</div>
 			<div class='col-xs-4 col-xs-offset-1 section'>
@@ -379,6 +383,9 @@
 				  </div>
 				</form>
 			</div>
+		</div>
+		<div class='col-xs-8 col-xs-offset-2 section text-center'>
+			<p style='color:white;letter-spacing:0.2em;' class='text'>All content &copy; 2014 Adam Confe Estela, all rights reserved.</p>
 		</div>
 	</div>
 </body>

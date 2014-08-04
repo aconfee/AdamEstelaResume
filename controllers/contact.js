@@ -1,10 +1,18 @@
 function ContactController($scope){
+  $scope.messageSent = false;
+  $scope.messageError = false;
 
   $scope.sendEmail = function(){
     // Get email info
     var $name = $('input[name="name"]');
     var $email = $('input[name="email"]');
     var $message = $('textarea[name="message"]');
+
+    if(!$name.val() || !$email.val() || !$message.val()){
+      $scope.messageError = true;
+      $scope.messageSent = false;
+      return;
+    }
 
     $.ajax({
       type: 'POST',
@@ -32,5 +40,8 @@ function ContactController($scope){
      $name.val('');
      $email.val('');
      $message.val('');
+
+     $scope.messageError = false;
+     $scope.messageSent = true;
   }
 }
