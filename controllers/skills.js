@@ -17,8 +17,8 @@ function SkillsController($scope){
 	$scope.mystyle = {width: $scope.languages[0].percent};
 
 	$scope.tools = [
-		{name:"Git", val:'85', percent:{width: "85%"},inProgress:false},
 		{name:"Selenium Web Driver", val:'90', percent:{width: "90%"},inProgress:false},
+		{name:"Git", val:'85', percent:{width: "85%"},inProgress:false},
 		{name:"Strider Continuous Integration", val:'80', percent:{width: "80%"},inProgress:false},
 		{name:"AngularJS", val:'60', percent:{width: "60%"},inProgress:true},
 		{name:"Azure", val:'20', percent:{width: "20%"},inProgress:true},

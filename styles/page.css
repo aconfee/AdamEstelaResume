@@ -1,0 +1,75 @@
+body{
+	font-family: 'Oxygen', sans-serif;
+
+	background-image: url('http://www.zastavki.com/pictures/originals/2013/Nature__039528_.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.font-white{
+	color:white;
+}
+
+.font-dark{
+	color:#555555;
+}
+
+.center{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+h1{
+	font-weight:bold;
+	font-size: 3em;
+	letter-spacing: .2em;
+	color:#555555;
+}
+
+h2{
+	font-size:1.5em;
+	letter-spacing: .1em;
+	color:#555555;
+}
+
+/* PAGE */
+.text-header{
+	font-size: 1.4em;
+	font-weight: bold;
+	color:#757575;
+}
+
+.text{
+	font-size: 1.2em;
+	word-wrap:break-word;
+	color:#757575;
+}
+
+.screen{
+	padding-top:100px;
+	padding-bottom:50px;
+	background-color: white;
+}
+
+.underline{
+	border-top: 2px solid #409edd;
+	max-width: 100px;
+	width:100px;
+	display: inline-block;
+}
+
+.underline-inverse{
+	border-color: white;
+}
+
+.section{
+	margin-top: 50px;
+}
+
+
+.inverse{
+	color:white;
+}
+
+

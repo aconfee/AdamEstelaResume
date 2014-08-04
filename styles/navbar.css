@@ -1,0 +1,27 @@
+/* NAVBAR */
+.navbar-default{
+	background-color:white;
+	opacity: .85;
+
+	font-weight: bold;
+
+	text-align: center;
+}
+
+.navbar .nav,
+.navbar .nav > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    *zoom:1; /* hasLayout ie7 trigger */
+}
+
+.navbar .nav > li > a {
+	color:#555555;
+	opacity: 1;
+}
+
+.navbar .nav > li > a:hover {
+	color:#409edd;
+	cursor: pointer;
+}

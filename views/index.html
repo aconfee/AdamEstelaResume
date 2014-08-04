@@ -7,7 +7,14 @@
 
 	<!-- Bootstrap css library for page layout -->
 	<link rel='stylesheet' type='text/css' href='../bower_components/bootstrap/dist/css/bootstrap.min.css' />
-	<link rel='stylesheet' type='text/css' href='../styles/main.css' />
+
+	<!-- Custom css -->
+	<link rel='stylesheet' type='text/css' href='../styles/page.css' />
+	<link rel='stylesheet' type='text/css' href='../styles/navbar.css' />
+	<link rel='stylesheet' type='text/css' href='../styles/cover.css' />
+	<link rel='stylesheet' type='text/css' href='../styles/skills.css' />
+	<link rel='stylesheet' type='text/css' href='../styles/portfolio.css' />
+	<link rel='stylesheet' type='text/css' href='../styles/contact.css' />
 
 	<!-- AngularJS to avoid duplicate HTML templates. All data is local. -->
 	<script src="../bower_components/angular/angular.min.js"></script>
@@ -27,7 +34,6 @@
 	<script>
 	  $(document).ready(function(){
 	    $('.carousel').carousel();
-	    $('.progress').tooltip('toggle');
 	  });
 	</script>
 </head>
@@ -35,7 +41,6 @@
 <body>
 
 	<!-- NAVBAR -->
-
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style:'opacity:0'>
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
@@ -46,7 +51,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <div class="navbar-brand text" style='color:red;letter-spacing:0.1em;'>Built by me!</div>
+	      <div class="navbar-brand text" style='color:red;letter-spacing:0.1em;position:absolute;'>Built by me!</div>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -77,9 +82,9 @@
 		<div class='row'>
 			<div class='social-icons'>
 				<a id='git-icon' class='icon' href='https://github.com/aconfee' target="_blank"></a>
-				<a id='linkedin-icon' class='icon' href='https://www.linkedin.com/profile/view?id=161738073' target="_blank"></a>
-				<a id='youtube-icon' class='icon' href='https://www.youtube.com/user/MrAconfee/videos' target="_blank"></a>
-				<a id='facebook-icon' class='icon' href='https://www.facebook.com/adam.estela' target="_blank"></a>
+				<a id='linkedin-icon' class='icon' href='http://tinyurl.com/nact72n' target="_blank"></a>
+				<a id='youtube-icon' class='icon' href='http://tinyurl.com/khovsg2' target="_blank"></a>
+				<a id='facebook-icon' class='icon' href='http://tinyurl.com/mv258dp' target="_blank"></a>
 			</div>
 		</div>
 
@@ -88,13 +93,13 @@
 			<div id='review-carousel' class='carousel slide text-center'>
 				<div class='carousel-inner'>
 					<div class='item active'>
-						<p class='quote'>"Adam has been great to work with, I have worked with him on multiple game projects as well as side projects in our spare time. He is unbelievably hard working and motivated in everything he does."<br/>-DAVID JAMES</p>
+						<P class='quote' style='text-align:left'>"Adam has been great to work with, I have worked with him on multiple game projects as well as side projects in our spare time. He is unbelievably hard working and motivated in everything he does."<br/><b style='float:right'>-DAVID JAMES / SDE Microsoft</b></P>
 					</div>
 					<div class='item'>
-						<p class='quote'>Yet another reveiw</p>
+						<P class='quote' style='text-align:left'>"I've worked with Adam on two student games and couldn't recommend him more. He's a great programmer and always keeps his mind on the big picture. Both projects were delivered in a completed state and were fun to work on."<br/><br/><b style='float:right'>-JORDAN MAPLES / SDET Microsoft</b></p>
 					</div>
 					<div class='item'>
-						<p class='quote'>"Adam is amazing" -Bill Gates</p>
+						<P class='quote' style='text-align:left'>"Adam is sexy."<br/><br/><b style='float:right'>-ANDREW NACK / Artist Signal Studios</b></p>
 					</div>
 				</div>
 
@@ -136,7 +141,7 @@
 				<img src="../resources/icon-facebook-hover.png" class="img-responsive">
 			</div>
 			<div class='col-xs-6 col-xs-offset-1 text'>
-				<span class='text-header'>WEB&nbsp;&nbsp;</span><span>While testing at PaperG, I fell in love with more development oriented tasks. I chased this passion by tirelessly working on solo end-end web applications while receiving professional code reviews. I have now started contributing to front end development on a professional level.</span>
+				<span class='text-header'>WEB&nbsp;&nbsp;</span><span>While testing at PaperG, I fell in love with more web development oriented tasks. I chased this passion by tirelessly working on solo end-end web applications while receiving professional code reviews. I have now started contributing to front end development on a professional level.</span>
 			</div>
 		</div>
 	</div>
@@ -255,7 +260,7 @@
 						<li><p>Game Implementation Techniques [Building a game engine]</p></li>
 						<li><p>English</p></li>
 					</ul>
-					I also served as the academic support tutor for CS, Mathematics, and English where I patiently assisted students through problems, aided in debugging, explained concepts, and offered encouragement.
+					I also served as the academic support tutor for CS, Mathematics, and English where I patiently assisted students through problems, aided in debugging, explained concepts, and offered encouragement. Near the end of my education, I interened in DigiPen's research and development department.
 				</p>
 			</div>
 		</div>
@@ -281,8 +286,8 @@
 			<div class='portfolio-items section'>
 				<div class='portfolio-item games ai' ng-mouseenter='showTabs(0)' ng-mouseleave='hideTabs(0)'>
 					<div class='portfolio-tabs'>
-						<a class='portfolio-tab text' ng-show='hovered == 0' href='http://games.digipen.edu/downloads/Luminosity_setup?id=1170&download=25896#.U9qUHfldUgQ' target='_blank'>Download</a>
-						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 0' href='http://aeprogramming.wordpress.com/games/' target='_blank'>+</a>
+						<a class='portfolio-tab text' ng-show='hovered == 0' href='http://tinyurl.com/kohelaw' target='_blank'>Download</a>
+						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 0' href='http://tinyurl.com/qdxco2t' target='_blank'>+</a>
 					</div>
 					<img class='img-responsive' src='http://i.imgur.com/uNk1eNa.png'></img>
 				</div>
@@ -290,36 +295,36 @@
 					<div class='portfolio-tabs'>
 						<a class='portfolio-tab text' ng-show='hovered == 1' href='http://adamestelaresume.azurewebsites.net/' target='_blank'>Live</a>
 						<a class='portfolio-tab text' ng-show='hovered == 1' href='https://github.com/aconfee/AdamEstelaResume' target='_blank'>Git</a>
-						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 1' href='http://aeprogramming.wordpress.com/' target='_blank'>+</a>
+						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 1' href='http://tinyurl.com/mk5vkhn' target='_blank'>+</a>
 					</div>
 					<img class='img-responsive' src='http://i.imgur.com/5G1rniF.png'></img>
 				</div>
 				<div class='portfolio-item graphics' ng-mouseenter='showTabs(2)' ng-mouseleave='hideTabs(2)'>
 					<div class='portfolio-tabs'>
-						<a class='portfolio-tab text' ng-show='hovered == 2' href='https://www.youtube.com/user/MrAconfee/videos' target='_blank'>Watch</a>
-						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 2' href='http://aeprogramming.wordpress.com/graphics/' target='_blank'>+</a>
+						<a class='portfolio-tab text' ng-show='hovered == 2' href='http://tinyurl.com/khovsg2' target='_blank'>Watch</a>
+						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 2' href='http://tinyurl.com/mvlctym' target='_blank'>+</a>
 					</div>
 					<img class='img-responsive' src='http://i.imgur.com/BfX5SeU.png'></img>
 				</div>
 				<div class='portfolio-item games ai' ng-mouseenter='showTabs(3)' ng-mouseleave='hideTabs(3)'>
 					<div class='portfolio-tabs'>
-						<a class='portfolio-tab text' ng-show='hovered == 3' href='https://drive.google.com/file/d/0B_AIogCcMET6QWdDYnk0SEtaVE0/edit?usp=sharing' target='_blank'>Download</a>
-						<a class='portfolio-tab text' ng-show='hovered == 3' href='https://www.youtube.com/watch?v=Z6ECBsE5sxo' target='_blank'>Watch</a>
-						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 3' href='http://aeprogramming.wordpress.com/games/' target='_blank'>+</a>
+						<a class='portfolio-tab text' ng-show='hovered == 3' href='http://tinyurl.com/llxjsqn' target='_blank'>Download</a>
+						<a class='portfolio-tab text' ng-show='hovered == 3' href='http://tinyurl.com/lydncv5' target='_blank'>Watch</a>
+						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 3' href='http://tinyurl.com/qdxco2t' target='_blank'>+</a>
 					</div>
 					<img class='img-responsive' src='http://i.imgur.com/GsmJcCv.png'></img>
 				</div>
 				<div class='portfolio-item ai' ng-mouseenter='showTabs(4)' ng-mouseleave='hideTabs(4)'>
 					<div class='portfolio-tabs'>
-						<a class='portfolio-tab text' ng-show='hovered == 4' href='https://www.youtube.com/watch?v=d_7Cx3_slsg&list=UUlfeZAnjyOWyE3ysVMvWlhQ' target='_blank'>Watch</a>
-						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 4' href='http://aeprogramming.wordpress.com/artificial-intelligence/' target='_blank'>+</a>
+						<a class='portfolio-tab text' ng-show='hovered == 4' href='http://tinyurl.com/lrvyps5' target='_blank'>Watch</a>
+						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 4' href='http://tinyurl.com/pjnwv35' target='_blank'>+</a>
 					</div>
 					<img class='img-responsive' src='http://i.imgur.com/lnWdNdd.png'></img>
 				</div>
 				<div class='portfolio-item games' ng-mouseenter='showTabs(5)' ng-mouseleave='hideTabs(5)'>
 					<div class='portfolio-tabs'>
-						<a class='portfolio-tab text' ng-show='hovered == 5' href='http://games.digipen.edu/downloads/WubWubRacerMagic_setup?id=1170&download=26685#.U9qjfPldUgQ' target='_blank'>Download</a>
-						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 5' href='http://aeprogramming.wordpress.com/games/' target='_blank'>+</a>
+						<a class='portfolio-tab text' ng-show='hovered == 5' href='http://tinyurl.com/mgu2t7x' target='_blank'>Download</a>
+						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 5' href='http://tinyurl.com/qdxco2t' target='_blank'>+</a>
 					</div>
 					<img class='img-responsive' src='http://i.imgur.com/miKmrPJ.png'></img>
 				</div>

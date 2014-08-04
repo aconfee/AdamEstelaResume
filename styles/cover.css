@@ -1,0 +1,106 @@
+/* COVER */ 
+#cover-screen{
+	margin-bottom:10%;
+}
+
+#cover-screen-title{
+	margin-top: 20em;
+}
+
+.cover-text{
+	font-weight: bold;
+	font-size:4em;
+	letter-spacing: .2em;
+}
+
+.social-icons{
+	width:100%;
+
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:30px;
+	margin-bottom: 60px;
+
+	text-align: center;
+}
+
+.icon{
+	width:3.4em;
+	height:3.4em;
+
+	border-radius: 30%;
+	border-width: 1px;
+	border-color: white;
+	border-style: solid;
+
+	display:inline-block;
+
+	margin:0 15px;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: 50%;
+
+	-webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.icon:hover{
+	background-color:white;
+}
+
+.icon:visited{
+	text-decoration: none;
+}
+
+.icon:active{
+	text-decoration: none;
+}
+
+#git-icon{
+	background-image: url('http://i.imgur.com/2myXYps.png?1');
+}
+
+#git-icon:hover{
+	background-image: url('http://i.imgur.com/HrOTSa0.png');
+}
+
+#linkedin-icon{
+	background-image: url('http://i.imgur.com/DaNrNYd.png');
+}
+
+#linkedin-icon:hover{
+	background-image: url('http://i.imgur.com/EtSyXB5.png');
+}
+
+#youtube-icon{
+	background-image: url('http://i.imgur.com/s544tLm.png');
+}
+
+#youtube-icon:hover{
+	background-image: url('http://i.imgur.com/ldZmQgc.png?1');
+}
+
+#facebook-icon{
+	background-image: url('http://i.imgur.com/4rfOZQf.png');
+}
+
+#facebook-icon:hover{
+	background-image: url('http://i.imgur.com/1cVSDip.png');
+}
+
+.carousel-inner{
+	text-align: center;
+	height:20em;
+}
+
+.quote{
+	word-wrap:break-word;
+	max-width: 30%;
+	font-style: italic;
+	color:white;
+	opacity:0.9;
+	display:inline-block;
+	margin-bottom: 10em;
+}
