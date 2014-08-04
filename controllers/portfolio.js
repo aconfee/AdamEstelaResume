@@ -13,6 +13,9 @@ function PortfolioController($scope){
 		var $portfolioItem = $('.portfolio-item').eq(index);
 		$portfolioItem.css({
 	        'transition': '0.2s ease-in-out',
+	        '-webkit-transition':'0.2s ease-in-out',
+	        '-moz-transition':'0.2s ease-in-out',
+	        '-o-transition':'0.2s ease-in-out',
 	        'transform': 'scale(1.1)',
     	});
 	};
@@ -26,6 +29,9 @@ function PortfolioController($scope){
 		var $portfolioItem = $('.portfolio-item').eq(index);
 		$portfolioItem.css({
 	        'transition': '0.2s ease-in-out',
+	        '-webkit-transition':'0.2s ease-in-out',
+	        '-moz-transition':'0.2s ease-in-out',
+	        '-o-transition':'0.2s ease-in-out',
 	        'transform': 'scale(1)',
     	});
 	};
