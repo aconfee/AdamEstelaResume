@@ -15,6 +15,7 @@
 	<link rel='stylesheet' type='text/css' href='../styles/skills.css' />
 	<link rel='stylesheet' type='text/css' href='../styles/portfolio.css' />
 	<link rel='stylesheet' type='text/css' href='../styles/contact.css' />
+	<link rel='stylesheet' type='text/css' href='../styles/overview.css' />
 	
 	<!-- jQuery for bootstrap and minor animations -->
 	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
@@ -110,27 +111,27 @@
 			</header>
 		</div>
 		<div class='row section'>
-			<div class='col-xs-1 col-xs-offset-2'>
+			<div id='gamesOverviewIcon' class='col-xs-1 col-xs-offset-2 overviewIcon'>
 				<img src="../resources/game-icon.jpg" class="img-responsive">
 			</div>
-			<div class='col-xs-6 col-xs-offset-1 text'>
+			<div id='gamesOverview' class='col-xs-6 col-xs-offset-1 text overviewDescription'>
 				<span class='text-header'>GAMES&nbsp;&nbsp;</span><span>My foundation lies in low level programming (C/C++) which I used to build several game engines from the ground up with teams of four developers. On these teams I not only acted as developer, but producer, where I ensured complete milestones and product delivery. I built five complete games during my 3.5 years of matriculation and have written tens of thousands of lines of code.  
 				</span>
 			</div>
 		</div>
 		<div class='row section'>
-			<div class='col-xs-1 col-xs-offset-2'>
+			<div id='testOverviewIcon' class='col-xs-1 col-xs-offset-2 overviewIcon'>
 				<img src="../resources/test-icon.jpg" class="img-responsive">
 			</div>
-			<div class='col-xs-6 col-xs-offset-1 text'>
+			<div id='testOverview' class='col-xs-6 col-xs-offset-1 text overviewDescription'>
 				<span class='text-header'>TEST&nbsp;&nbsp;</span><span>I am one of two automated testers at PaperG, Inc. Initially, my scope of responsibility included building automated UI tests, but I quickly expanded to focus on infrastructure. I've worked on our continuous integration pipeline, set up test frameworks for other devs, written tools for other test automators, and, of course, written tests. I've successfully helped reduce bug turn-around time and false negatives.</span>
 			</div>
 		</div>
 		<div class='row section'>
-			<div class='col-xs-1 col-xs-offset-2'>
+			<div id='webOverviewIcon' class='col-xs-1 col-xs-offset-2 overviewIcon'>
 				<img src="../resources/web-icon.jpg" class="img-responsive">
 			</div>
-			<div class='col-xs-6 col-xs-offset-1 text'>
+			<div id='webOverview' class='col-xs-6 col-xs-offset-1 text overviewDescription'>
 				<span class='text-header'>WEB&nbsp;&nbsp;</span><span>While testing at PaperG, I fell in love with more web development oriented tasks. I chased this passion by tirelessly working on solo end-end web applications while receiving professional code reviews. I have now started contributing to front end development on a professional level.</span>
 			</div>
 		</div>
@@ -387,6 +388,7 @@
 	<script src='../controllers/portfolio.js'></script>
 	<script src='../controllers/nav.js'></script>
 	<script src='../controllers/contact.js'></script>
+	<script src='../controllers/fades.js'></script>
 </body>
 
 <html>
