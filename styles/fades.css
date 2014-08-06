@@ -1,0 +1,14 @@
+.fadeInRight{
+	left:75px;
+	opacity: 0;
+}
+
+.fadeInLeft{
+	right:75px;
+	opacity: 0;
+}
+
+.fadeInBottom{
+	top:75px;
+	opacity: 0;
+}
