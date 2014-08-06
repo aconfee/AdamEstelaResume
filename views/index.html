@@ -16,7 +16,12 @@
 	<link rel='stylesheet' type='text/css' href='../styles/portfolio.css' />
 	<link rel='stylesheet' type='text/css' href='../styles/contact.css' />
 	
+	<!-- jQuery for bootstrap and minor animations -->
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- Javascript for bootstrap -->
+	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script>
+	  // Initialize reviews carousel.
 	  $(document).ready(function(){
 	    $('.carousel').carousel();
 	  });
@@ -106,7 +111,7 @@
 		</div>
 		<div class='row section'>
 			<div class='col-xs-1 col-xs-offset-2'>
-				<img src="../resources/icon-facebook-hover.png" class="img-responsive">
+				<img src="../resources/game-icon.jpg" class="img-responsive">
 			</div>
 			<div class='col-xs-6 col-xs-offset-1 text'>
 				<span class='text-header'>GAMES&nbsp;&nbsp;</span><span>My foundation lies in low level programming (C/C++) which I used to build several game engines from the ground up with teams of four developers. On these teams I not only acted as developer, but producer, where I ensured complete milestones and product delivery. I built five complete games during my 3.5 years of matriculation and have written tens of thousands of lines of code.  
@@ -115,7 +120,7 @@
 		</div>
 		<div class='row section'>
 			<div class='col-xs-1 col-xs-offset-2'>
-				<img src="../resources/icon-facebook-hover.png" class="img-responsive">
+				<img src="../resources/test-icon.jpg" class="img-responsive">
 			</div>
 			<div class='col-xs-6 col-xs-offset-1 text'>
 				<span class='text-header'>TEST&nbsp;&nbsp;</span><span>I am one of two automated testers at PaperG, Inc. Initially, my scope of responsibility included building automated UI tests, but I quickly expanded to focus on infrastructure. I've worked on our continuous integration pipeline, set up test frameworks for other devs, written tools for other test automators, and, of course, written tests. I've successfully helped reduce bug turn around time and false negatives.</span>
@@ -123,7 +128,7 @@
 		</div>
 		<div class='row section'>
 			<div class='col-xs-1 col-xs-offset-2'>
-				<img src="../resources/icon-facebook-hover.png" class="img-responsive">
+				<img src="../resources/web-icon.jpg" class="img-responsive">
 			</div>
 			<div class='col-xs-6 col-xs-offset-1 text'>
 				<span class='text-header'>WEB&nbsp;&nbsp;</span><span>While testing at PaperG, I fell in love with more web development oriented tasks. I chased this passion by tirelessly working on solo end-end web applications while receiving professional code reviews. I have now started contributing to front end development on a professional level.</span>
@@ -139,18 +144,16 @@
 			</header>
 		</div>
 		<div class='row section'>
-			<div class='col-xs-1 col-xs-offset-1'>
-				<div ng-show='showTip' class='text' style='font-weight:bold; margin-top:80px;'>CLICK US!</div>
-			</div>
-			<div class='col-xs-3'>
+			<div class='col-xs-3 col-xs-offset-2'>
 				<span class='text-header'>LANGUAGES</span>
 				<div class="progress" ng-class="{'progress-selected': $index == selectedLanguage}" ng-repeat='language in languages' ng-click='displayLanguageDescription(language.name); insetLanguageBar($index); hideTip();'>
 				  <div class="progress-bar progress-bar-success" ng-class="{'progress-selected': $index == selectedLanguage, 'progress-bar-striped active': language.inProgress}" role="progressbar" aria-valuenow="{{ language.val }}" aria-valuemin="0" aria-valuemax="100" ng-style="language.percent">
 				    <p>{{ language.name }}</p>
 				  </div>
+				  <img class='bar-info' src='../resources/info-icon-grey.png' ng-show='$index != selectedLanguage'></img>
 				</div>
 			</div>
-			<div class='col-xs-4 col-xs-offset-1 right-align'>
+			<div class='col-xs-4 col-xs-offset-1 right-align' id='languageDescription'>
 				<p class='text-header'>{{ languageDisplay.name }}</p>
 				<p class='text'>
 					<span class='skill-attribute'>Years Actively Used:</span> <b>{{ languageDisplay.yearsUsed }}</b>
@@ -168,9 +171,10 @@
 				  <div class="progress-bar progress-bar-success" ng-class="{'progress-selected': $index == selectedTool, 'progress-bar-striped active': tool.inProgress}" role="progressbar" aria-valuenow="{{ tool.val }}" aria-valuemin="0" aria-valuemax="100" ng-style="tool.percent">
 				    <p>{{ tool.name }}</p>
 				  </div>
+				  <img class='bar-info' src='../resources/info-icon-grey.png' ng-show='$index != selectedTool'></img>
 				</div>
 			</div>
-			<div class='col-xs-4 col-xs-offset-1 right-align'>
+			<div class='col-xs-4 col-xs-offset-1 right-align' id='toolDescription'>
 				<p class='text-header'>{{ toolDisplay.name }}</p>
 				<p class='text'>
 					<span class='skill-attribute'>Years Actively Used:</span> <b>{{ toolDisplay.yearsUsed }}</b>
@@ -272,7 +276,7 @@
 				<div class='portfolio-item games ai' ng-mouseenter='showTabs(0)' ng-mouseleave='hideTabs(0)'>
 					<div class='portfolio-tabs'>
 						<a class='portfolio-tab text' ng-show='hovered == 0' href='http://tinyurl.com/kohelaw' target='_blank'>Download</a>
-						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 0' href='http://tinyurl.com/qdxco2t' target='_blank'>+</a>
+						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 0' href='http://tinyurl.com/qdxco2t' target='_blank'><img class='info-icon' src='../resources/info-icon-plain.png'</img></a>
 					</div>
 					<img class='img-responsive' src='http://i.imgur.com/uNk1eNa.png'></img>
 				</div>
@@ -280,14 +284,14 @@
 					<div class='portfolio-tabs'>
 						<a class='portfolio-tab text' ng-show='hovered == 1' href='http://adamestelaresume.azurewebsites.net/' target='_blank'>Live</a>
 						<a class='portfolio-tab text' ng-show='hovered == 1' href='https://github.com/aconfee/AdamEstelaResume' target='_blank'>Git</a>
-						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 1' href='http://tinyurl.com/mk5vkhn' target='_blank'>+</a>
+						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 1' href='http://tinyurl.com/mk5vkhn' target='_blank'><img class='info-icon' src='../resources/info-icon-plain.png'</img></a>
 					</div>
 					<img class='img-responsive' src='http://i.imgur.com/5G1rniF.png'></img>
 				</div>
 				<div class='portfolio-item graphics' ng-mouseenter='showTabs(2)' ng-mouseleave='hideTabs(2)'>
 					<div class='portfolio-tabs'>
 						<a class='portfolio-tab text' ng-show='hovered == 2' href='http://tinyurl.com/khovsg2' target='_blank'>Watch</a>
-						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 2' href='http://tinyurl.com/mvlctym' target='_blank'>+</a>
+						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 2' href='http://tinyurl.com/mvlctym' target='_blank'><img class='info-icon' src='../resources/info-icon-plain.png'</img></a>
 					</div>
 					<img class='img-responsive' src='http://i.imgur.com/BfX5SeU.png'></img>
 				</div>
@@ -295,21 +299,21 @@
 					<div class='portfolio-tabs'>
 						<a class='portfolio-tab text' ng-show='hovered == 3' href='http://tinyurl.com/llxjsqn' target='_blank'>Download</a>
 						<a class='portfolio-tab text' ng-show='hovered == 3' href='http://tinyurl.com/lydncv5' target='_blank'>Watch</a>
-						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 3' href='http://tinyurl.com/qdxco2t' target='_blank'>+</a>
+						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 3' href='http://tinyurl.com/qdxco2t' target='_blank'><img class='info-icon' src='../resources/info-icon-plain.png'</img></a>
 					</div>
 					<img class='img-responsive' src='http://i.imgur.com/GsmJcCv.png'></img>
 				</div>
 				<div class='portfolio-item ai' ng-mouseenter='showTabs(4)' ng-mouseleave='hideTabs(4)'>
 					<div class='portfolio-tabs'>
 						<a class='portfolio-tab text' ng-show='hovered == 4' href='http://tinyurl.com/lrvyps5' target='_blank'>Watch</a>
-						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 4' href='http://tinyurl.com/pjnwv35' target='_blank'>+</a>
+						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 4' href='http://tinyurl.com/pjnwv35' target='_blank'><img class='info-icon' src='../resources/info-icon-plain.png'</img></a>
 					</div>
 					<img class='img-responsive' src='http://i.imgur.com/lnWdNdd.png'></img>
 				</div>
 				<div class='portfolio-item games' ng-mouseenter='showTabs(5)' ng-mouseleave='hideTabs(5)'>
 					<div class='portfolio-tabs'>
 						<a class='portfolio-tab text' ng-show='hovered == 5' href='http://tinyurl.com/mgu2t7x' target='_blank'>Download</a>
-						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 5' href='http://tinyurl.com/qdxco2t' target='_blank'>+</a>
+						<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 5' href='http://tinyurl.com/qdxco2t' target='_blank'><img class='info-icon' src='../resources/info-icon-plain.png'</img></a>
 					</div>
 					<img class='img-responsive' src='http://i.imgur.com/miKmrPJ.png'></img>
 				</div>
@@ -327,7 +331,6 @@
 		<div class='row'>
 			<div class='col-xs-3 col-xs-offset-2 section'>
 				<h2 style='color:white'><b>Contact Info</b></h2>
-				<p class='text' style='color:white'>1321 Minor Ave #B504, Seattle, WA 98101</p>
 				<p class='text' style='color:white'>(509) 494-4676</p>
 				<p class='text' style='color:white'>adamestela@gmail.com</p>
 				<div id='message-sent' ng-show='messageSent'>
@@ -375,10 +378,6 @@
 	
 	<!-- AngularJS to avoid duplicate HTML templates. All data is local. -->
 	<script src="../bower_components/angular/angular.min.js"></script>
-	<!-- jQuery for bootstrap and minor animations -->
-	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
-	<!-- Javascript for bootstrap -->
-	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 	<!-- Isotope (filtering) -->
 	<script src="../tools/isotope/isotope.min.js"></script>

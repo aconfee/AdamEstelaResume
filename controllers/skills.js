@@ -65,20 +65,42 @@ function SkillsController($scope){
 	// index: index of the item clicked
 	// name: name of the item clicked (to look up info)
 	$scope.displayLanguageDescription = function(name){
-		var info = self.descriptions[name];
-		$scope.languageDisplay.name = name;
-		$scope.languageDisplay.yearsUsed = info.yearsUsed;
-		$scope.languageDisplay.projects = info.projects;
-		$scope.languageDisplay.description = info.description;
+		var $languageDescription = $('#languageDescription');
+		$languageDescription.animate({
+			opacity:0
+		}, 150, function(){
+
+			var info = self.descriptions[name];
+			$scope.languageDisplay.name = name;
+			$scope.languageDisplay.yearsUsed = info.yearsUsed;
+			$scope.languageDisplay.projects = info.projects;
+			$scope.languageDisplay.description = info.description;
+			$scope.$apply();
+
+			$languageDescription.animate({
+				opacity:1
+			});
+		});
 	};
 
 	$scope.displayToolDescription = function(name){
-		var info = self.descriptions[name];
-		$scope.toolDisplay.name = name;
-		$scope.toolDisplay.yearsUsed = info.yearsUsed;
-		$scope.toolDisplay.projects = info.projects;
-		$scope.toolDisplay.lines = info.lines;
-		$scope.toolDisplay.description = info.description;
+		var $toolDescription = $('#toolDescription');
+		$toolDescription.animate({
+			opacity:0
+		}, 250, function(){
+
+			var info = self.descriptions[name];
+			$scope.toolDisplay.name = name;
+			$scope.toolDisplay.yearsUsed = info.yearsUsed;
+			$scope.toolDisplay.projects = info.projects;
+			$scope.toolDisplay.lines = info.lines;
+			$scope.toolDisplay.description = info.description;
+			$scope.$apply();
+
+			$toolDescription.animate({
+				opacity:1
+			});
+		});
 	};
 
 	$scope.insetLanguageBar = function($index){

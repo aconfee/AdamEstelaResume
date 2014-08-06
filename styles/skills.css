@@ -35,7 +35,7 @@
 }
 
 .progress-selected:hover{
-	box-shadow: inset 3px 3px 5px #275427;
+	box-shadow: inset 5px 5px 5px #275427;
 	transform: scale(1);
 }
 
@@ -60,3 +60,24 @@
 	max-width: 100%;
 	word-break:break-word;
 }
+
+.bar-info{
+	float:right;
+
+	width:25px;
+	height:25px;
+	border-radius: 50%;
+
+	margin:3px;
+	padding:2px;
+
+	-webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.progress:hover img{
+	transform: scale(0.5);
+}
+
