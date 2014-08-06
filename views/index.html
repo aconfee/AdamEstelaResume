@@ -265,11 +265,11 @@
 		</div>
 		<div class='row'>
 			<div class='col-xs-8 col-xs-offset-2 text-center section'>
-				<button ng-click='filterPortfolio("*")' data-filter='*' type="button" class="btn btn-default">All</button>
-				<button ng-click='filterPortfolio(".games")' data-filter='.games' type="button" class="btn btn-default">Games</button>
-				<button ng-click='filterPortfolio(".web")' data-filter='.web' type="button" class="btn btn-default">Web</button>
-				<button ng-click='filterPortfolio(".graphics")' data-filter='.graphics' type="button" class="btn btn-default">Graphics</button>
-				<button ng-click='filterPortfolio(".ai")' data-filter='.ai' type="button" class="btn btn-default">Artificial Intelligence</button>
+				<button ng-click='filterPortfolio("*");setActive(0);' data-filter='*' type="button" ng-class='{"active":activeIndex == 0}' class="btn btn-default">All</button>
+				<button ng-click='filterPortfolio(".games");setActive(1);' data-filter='.games' type="button" ng-class='{"active":activeIndex == 1}' class="btn btn-default">Games</button>
+				<button ng-click='filterPortfolio(".web");setActive(2);' data-filter='.web' type="button" ng-class='{"active":activeIndex == 2}' class="btn btn-default">Web</button>
+				<button ng-click='filterPortfolio(".graphics");setActive(3);' data-filter='.graphics' type="button" ng-class='{"active":activeIndex == 3}' class="btn btn-default">Graphics</button>
+				<button ng-click='filterPortfolio(".ai");setActive(4);' data-filter='.ai' type="button" ng-class='{"active":activeIndex == 4}' class="btn btn-default">Artificial Intelligence</button>
 			</div>
 		</div>
 		<div class='row text-center'>

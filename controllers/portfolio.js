@@ -3,6 +3,7 @@ function PortfolioController($scope){
 	$container.isotope();
 
 	$scope.hovered = -1;
+	$scope.activeIndex = 0;
 
 	$scope.showTabs = function(index){
 		var $tabs = $('.portfolio-tabs').eq(index);
@@ -38,5 +39,9 @@ function PortfolioController($scope){
 
 	$scope.filterPortfolio = function(filterValue){
 		$container.isotope({filter:filterValue});
+	};
+
+	$scope.setActive = function(index){
+		$scope.activeIndex = index;
 	};
 }
