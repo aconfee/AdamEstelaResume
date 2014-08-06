@@ -120,7 +120,7 @@ function SkillsController($scope){
 		"C#":{	
 			yearsUsed:"1.5",
 			projects:"3",
-			description:"I started using C# my senior year of school to script games in Unity. Outside of school, when I felt more comfortable with both Unity anc C#, I worked on Survaillent during a 48 hour game jam (see in portfolio) as one of two programmers. I then spent a few months studying and practicing with the language."
+			description:"I started using C# my senior year of school to script games in Unity. Outside of school, when I felt more comfortable with both Unity and C#, I worked on Survaillent during a 48 hour game jam (see in portfolio) as one of two programmers. I then spent a few months studying and practicing with the language."
 		},
 		"Javascript/jQuery":{ 	
 			yearsUsed:"0.15",
@@ -155,7 +155,7 @@ function SkillsController($scope){
 		"Selenium Web Driver":{
 			yearsUsed:"0.5",
 			projects:"Professional Experience",
-			description:"Automating tests with Selenium is my primary professional responsibility. I've written several tools around Selenium to make test feedback more accurate, easy to debug, and reliable. I was also promoted after 4 months for gaining ownership in this area so quickly as well as extending my responsibilities to several other areas."
+			description:"Automating tests with Selenium is my primary professional responsibility. I've written several tools around Selenium to make test feedback more accurate, easy to debug, and reliable. I was also promoted after 4 months for gaining ownership in this area quickly as well as extending my responsibilities to several other areas."
 		},
 		"Strider Continuous Integration":{
 			yearsUsed:"0.5",
@@ -165,7 +165,7 @@ function SkillsController($scope){
 		"AngularJS":{
 			yearsUsed:"0.15",
 			projects:"2 + Professional Exposure",
-			description:"When I started building web apps, AngularJS was recommended to me. I'm exposed to it professionally, and use it frequently. This very description is data-bound using AngularJS!"
+			description:"When I started building web apps, AngularJS was recommended to me. I'm exposed to it professionally, and use it on side projects frequently. This very description is data-bound using AngularJS!"
 		},
 		"Azure":{
 			yearsUsed:"0.15",
