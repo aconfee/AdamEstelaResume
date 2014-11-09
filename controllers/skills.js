@@ -5,9 +5,9 @@ function SkillsController($scope){
 	$scope.showTip = true;
 
 	$scope.languages = [
-		{name:"C/C++", val:'90', percent:{width: "90%"},inProgress:false},
-		{name:"C#", val:'75', percent:{width: "75%"},inProgress:false},
-		{name:"Javascript/jQuery", val:'75', percent:{width: "75%"},inProgress:true},
+		{name:"C/C++", val:'85', percent:{width: "85%"},inProgress:false},
+		{name:"C#", val:'70', percent:{width: "70%"},inProgress:false},
+		{name:"Javascript/jQuery", val:'70', percent:{width: "70%"},inProgress:true},
 		{name:"HTML/CSS", val:'65', percent:{width: "65%"},inProgress:true},
 		{name:"Java", val:'60', percent:{width: "60%"},inProgress:false},
 		//{name:"Shellscript", percent:"60%",inProgress:false}//,
@@ -17,9 +17,9 @@ function SkillsController($scope){
 	$scope.mystyle = {width: $scope.languages[0].percent};
 
 	$scope.tools = [
-		{name:"Selenium Web Driver", val:'90', percent:{width: "90%"},inProgress:false},
+		{name:"Continuous Integration/Deployment", val:'90', percent:{width: "90%"},inProgress:true},
+		{name:"Selenium Web Driver", val:'85', percent:{width: "85%"},inProgress:false},
 		{name:"Git", val:'85', percent:{width: "85%"},inProgress:false},
-		{name:"Strider Continuous Integration", val:'80', percent:{width: "80%"},inProgress:false},
 		{name:"AngularJS", val:'60', percent:{width: "60%"},inProgress:true}//,
 		//{name:"Azure", val:'20', percent:{width: "20%"},inProgress:true},
 		//{name:"NodeJS", val:'10', percent:{width: "10%"},inProgress:true}
@@ -123,7 +123,7 @@ function SkillsController($scope){
 			description:"I started using C# my senior year of school to script games in Unity. Outside of school, when I felt more comfortable with both Unity and C#, I worked on Survaillent during a 48 hour game jam (see in portfolio) as one of two programmers. I then spent a few months studying and practicing with the language."
 		},
 		"Javascript/jQuery":{ 	
-			yearsUsed:"0.15",
+			yearsUsed:"0.5",
 			projects:"2 + Professional Experience",
 			description:"I've recently started using Javascript to contribute to work projects. In order to grow quicker, co-workers are reviewing my solo end-end side projects. I've spent the past two months tirelessly working on side projects in order to iterate fast, fail frequently, and gain experience."
 		},
@@ -133,7 +133,7 @@ function SkillsController($scope){
 			description:"My current job involves writing automated tests for a web service, so I'm extremely comfortable with HTML and CSS. I've recently started using it to develop my own projects, but after professional exposure, there was almost no learning curve. I am familiar with other CSS languages like LESS and SASS, but have not used them yet."
 		},
 		"Java":{		
-			yearsUsed:"0.5",
+			yearsUsed:"1",
 			projects:"Professional Experience",
 			description:"I've been using Java since day one at my current job. Other than a few easily google-able syntactical differences, I had no trouble jumping in after using C/C++ and C#. Although, it's worth noting that I use Java for test automation, so I'm proficient with trivial use, but not the ins and outs of the language."
 		},
@@ -153,17 +153,17 @@ function SkillsController($scope){
 			description:"Git/Github is my current repo at work. I'm familiar with different levels of branching for features/devs/production/etc."
 		},
 		"Selenium Web Driver":{
-			yearsUsed:"0.5",
+			yearsUsed:"0.75",
 			projects:"Professional Experience",
 			description:"Automating tests with Selenium is my primary professional responsibility. I've written several tools around Selenium to make test feedback more accurate, easy to debug, and reliable. I was also promoted after 4 months for gaining ownership in this area quickly as well as extending my responsibilities to several other areas."
 		},
-		"Strider Continuous Integration":{
-			yearsUsed:"0.5",
+		"Continuous Integration/Deployment":{
+			yearsUsed:"0.75",
 			projects:"Professional Experience",
 			description:"Maintaining and building up Strider is one of my larger professional roles. I worked with my manager to write our CI test runner pipeline which runs test groups based on changed files automatically, and am one of the primary points of contact for CI issues."
 		},
 		"AngularJS":{
-			yearsUsed:"0.15",
+			yearsUsed:"0.5",
 			projects:"2 + Professional Exposure",
 			description:"When I started building web apps, AngularJS was recommended to me. I'm exposed to it professionally, and use it on side projects frequently. This very description is data-bound using AngularJS!"
 		},
