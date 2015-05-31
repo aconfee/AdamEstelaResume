@@ -155,6 +155,11 @@ function SkillsController($scope){
 			projects:"3 + Professional Experience",
 			description:"Git/Github is my current repo at work. I'm familiar with different levels of branching for features/devs/production/etc."
 		},
+		"Unity":{
+			yearsUsed:"1",
+			projects:"2 + Professional Exposure",
+			description:"After developing game engines from the ground up in C++, it was a delight to Unity my Senior year of college. I have built two games with small teams of developers, artists, and designers. I also use Unity lightly in my current position."
+		},
 		"Selenium Web Driver":{
 			yearsUsed:"0.75",
 			projects:"Professional Experience",
