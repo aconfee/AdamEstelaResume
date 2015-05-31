@@ -6,10 +6,10 @@ function SkillsController($scope){
 
 	$scope.languages = [
 		{name:"C/C++", val:'85', percent:{width: "85%"},inProgress:false},
-		{name:"C#", val:'70', percent:{width: "70%"},inProgress:false},
-		{name:"Javascript/jQuery", val:'70', percent:{width: "70%"},inProgress:true},
-		{name:"HTML/CSS", val:'65', percent:{width: "65%"},inProgress:true},
-		{name:"Java", val:'60', percent:{width: "60%"},inProgress:false},
+		{name:"C#", val:'70', percent:{width: "70%"},inProgress:true},
+		{name:"Javascript/jQuery", val:'70', percent:{width: "70%"},inProgress:false},
+		{name:"HTML/CSS", val:'65', percent:{width: "65%"},inProgress:false},
+		{name:"Java", val:'60', percent:{width: "60%"},inProgress:true},
 		//{name:"Shellscript", percent:"60%",inProgress:false}//,
 		{name:"Python", val:'40', percent:{width: "40%"},inProgress:false}
 	];
@@ -17,7 +17,7 @@ function SkillsController($scope){
 	$scope.mystyle = {width: $scope.languages[0].percent};
 
 	$scope.tools = [
-		{name:"Continuous Integration/Deployment", val:'90', percent:{width: "90%"},inProgress:true},
+		{name:"Continuous Integration/Deployment", val:'90', percent:{width: "90%"},inProgress:false},
 		{name:"Selenium Web Driver", val:'85', percent:{width: "85%"},inProgress:false},
 		{name:"Git", val:'85', percent:{width: "85%"},inProgress:false},
 		{name:"AngularJS", val:'60', percent:{width: "60%"},inProgress:true}//,
@@ -26,6 +26,10 @@ function SkillsController($scope){
 	];
 
 	$scope.skillBucket = [
+		{name:"Unity"},
+		{name:"Game Engine Development"},
+		{name:"3D Graphics Pipeline Development"},
+		{name:"Shaders"},
 		{name:"NodeJS"},
 		{name:"Azure"},
 		{name:"Shellscript"},
@@ -35,8 +39,8 @@ function SkillsController($scope){
 		{name:"Bash"},
 		{name:"HLSL"},
 		{name:"GLSL"},
+		{name:"Visual Studio"},
 		{name:"Mocha"},
-		{name:"Unity"},
 		{name:"OpenGL"},
 		{name:"DirectX"},
 		{name:"JS Hint"},
@@ -119,8 +123,8 @@ function SkillsController($scope){
 		},
 		"C#":{	
 			yearsUsed:"1.5",
-			projects:"3",
-			description:"I started using C# my senior year of school to script games in Unity. Outside of school, when I felt more comfortable with both Unity and C#, I worked on Survaillent during a 48 hour game jam (see in portfolio) as one of two programmers. I then spent a few months studying and practicing with the language."
+			projects:"3 + Professional Experience",
+			description:"I currently use C# as one of my primary lanuages at work to build a multi-project-scalable, multi-device, multi-product automation framework from the ground up for bleeding edge technology, the Microsoft Hololens. I started using C# my senior year of school to script games in Unity. Outside of school, when I felt more comfortable with both Unity and C#, I worked on Survaillent during a 48 hour game jam (see in portfolio) as one of two programmers."
 		},
 		"Javascript/jQuery":{ 	
 			yearsUsed:"0.5",
@@ -130,12 +134,12 @@ function SkillsController($scope){
 		"HTML/CSS":{	
 			yearsUsed:"1",
 			projects:"3 + Professional Exposure",
-			description:"My current job involves writing automated tests for a web service, so I'm extremely comfortable with HTML and CSS. I've recently started using it to develop my own projects, but after professional exposure, there was almost no learning curve. I am familiar with other CSS languages like LESS and SASS, but have not used them yet."
+			description:"My previous job involved writing automated tests for a web service, so I'm extremely comfortable with HTML and CSS. I've recently started using it to develop my own projects, but after professional exposure, there was almost no learning curve. I am familiar with other CSS languages like LESS and SASS, but have not used them yet."
 		},
 		"Java":{		
 			yearsUsed:"1",
 			projects:"Professional Experience",
-			description:"I've been using Java since day one at my current job. Other than a few easily google-able syntactical differences, I had no trouble jumping in after using C/C++ and C#. Although, it's worth noting that I use Java for test automation, so I'm proficient with trivial use, but not the ins and outs of the language."
+			description:"I've used Java in both of my professional postions. Other than a few easily google-able syntactical differences, I had no trouble jumping in after using C/C++ and C#. Although, it's worth noting that I use Java for test automation, so I'm proficient with trivial use, but not the ins and outs of the language."
 		},
 		"Shellscript":{
 			yearsUsed:"1",
