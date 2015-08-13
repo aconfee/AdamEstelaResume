@@ -9,7 +9,7 @@ function SkillsController($scope){
 		{name:"C#", val:'70', percent:{width: "70%"},inProgress:true},
 		{name:"Javascript/jQuery", val:'70', percent:{width: "70%"},inProgress:false},
 		{name:"HTML/CSS", val:'65', percent:{width: "65%"},inProgress:false},
-		{name:"Java", val:'60', percent:{width: "60%"},inProgress:true},
+		{name:"Java", val:'60', percent:{width: "60%"},inProgress:false},
 		//{name:"Shellscript", percent:"60%",inProgress:false}//,
 		{name:"Python", val:'40', percent:{width: "40%"},inProgress:false}
 	];
@@ -18,10 +18,10 @@ function SkillsController($scope){
 
 	$scope.tools = [
 		{name:"Unity", val:'85', percent:{width: "85%"},inProgress:true},
-		{name:"Selenium Web Driver", val:'80', percent:{width: "80%"},inProgress:false},
-		{name:"AngularJS", val:'60', percent:{width: "60%"},inProgress:false}//,
+		//{name:"Selenium Web Driver", val:'80', percent:{width: "80%"},inProgress:false},
+		{name:"AngularJS", val:'60', percent:{width: "60%"},inProgress:false},
 		//{name:"Azure", val:'20', percent:{width: "20%"},inProgress:true},
-		//{name:"NodeJS", val:'10', percent:{width: "10%"},inProgress:true}
+		{name:"NodeJS", val:'10', percent:{width: "10%"},inProgress:true}
 	];
 
 	$scope.skillBucket = [
@@ -183,7 +183,7 @@ function SkillsController($scope){
 		"NodeJS":{
 			yearsUsed:"0.2",
 			projects:"Professional Exposure",
-			description:"I am actively learning and practicing NodeJS. I use a simple node server at work, and have implemented one of my own. I'm also familiar with, and frequently use, Node's package manager."
+			description:"I am actively learning how to develop full web applications with NodeJS and its supported toolset, including MySQL, MongoDB, Express.js, Jade, and more."
 		}
 	}
 
