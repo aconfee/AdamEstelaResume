@@ -123,7 +123,7 @@ function SkillsController($scope){
 		"C#":{	
 			yearsUsed:"1.5",
 			projects:"3 + Professional Experience",
-			description:"I currently use C# as one of my primary lanuages at work to build a multi-project-scalable, multi-device, multi-product automation framework from the ground up for bleeding edge technology, the Microsoft Hololens. I started using C# my senior year of school to script games in Unity. Outside of school, when I felt more comfortable with both Unity and C#, I worked on Survaillent during a 48 hour game jam (see in portfolio) as one of two programmers."
+			description:"I currently use C# as one of my primary languages at work to build a multi-project-scalable, multi-device, multi-product automation framework from the ground up for bleeding edge technology, the Microsoft Hololens. I started using C# my senior year of school to script games in Unity. Outside of school, when I felt more comfortable with both Unity and C#, I worked on Survaillent during a 48 hour game jam (see in portfolio) as one of two programmers."
 		},
 		"Javascript/jQuery":{ 	
 			yearsUsed:"0.5",
@@ -138,7 +138,7 @@ function SkillsController($scope){
 		"Java":{		
 			yearsUsed:"1",
 			projects:"Professional Experience",
-			description:"I've used Java in both of my professional postions. Other than a few easily google-able syntactical differences, I had no trouble jumping in after using C/C++ and C#. Although, it's worth noting that I use Java for test automation, so I'm proficient with trivial use, but not the ins and outs of the language."
+			description:"I've used Java in both of my professional positions. Other than a few easily google-able syntactical differences, I had no trouble jumping in after using C/C++ and C#. Although, it's worth noting that I use Java for test automation, so I'm proficient with trivial use, but not the ins and outs of the language."
 		},
 		"Shellscript":{
 			yearsUsed:"1",
