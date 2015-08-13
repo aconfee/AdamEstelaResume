@@ -21,7 +21,7 @@ function SkillsController($scope){
 		//{name:"Selenium Web Driver", val:'80', percent:{width: "80%"},inProgress:false},
 		{name:"AngularJS", val:'60', percent:{width: "60%"},inProgress:false},
 		//{name:"Azure", val:'20', percent:{width: "20%"},inProgress:true},
-		{name:"NodeJS", val:'10', percent:{width: "10%"},inProgress:true}
+		{name:"NodeJS", val:'30', percent:{width: "30%"},inProgress:true}
 	];
 
 	$scope.skillBucket = [
