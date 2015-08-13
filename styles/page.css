@@ -1,7 +1,7 @@
 body{
 	font-family: 'Oxygen', sans-serif;
 
-	background-image: url('http://www.zastavki.com/pictures/originals/2013/Nature__039528_.jpg');
+	background-image: url('../resources/origBackground.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
