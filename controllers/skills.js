@@ -7,7 +7,7 @@ function SkillsController($scope){
 	$scope.languages = [
 		{name:"C/C++", val:'85', percent:{width: "85%"},inProgress:false},
 		{name:"C#", val:'70', percent:{width: "70%"},inProgress:true},
-		{name:"Javascript/jQuery", val:'70', percent:{width: "70%"},inProgress:false},
+		{name:"Javascript", val:'70', percent:{width: "70%"},inProgress:true},
 		{name:"HTML/CSS", val:'65', percent:{width: "65%"},inProgress:false},
 		{name:"Java", val:'60', percent:{width: "60%"},inProgress:false},
 		//{name:"Shellscript", percent:"60%",inProgress:false}//,
@@ -21,7 +21,7 @@ function SkillsController($scope){
 		//{name:"Selenium Web Driver", val:'80', percent:{width: "80%"},inProgress:false},
 		{name:"AngularJS", val:'60', percent:{width: "60%"},inProgress:false},
 		//{name:"Azure", val:'20', percent:{width: "20%"},inProgress:true},
-		{name:"NodeJS", val:'30', percent:{width: "30%"},inProgress:true}
+		{name:"NodeJS", val:'50', percent:{width: "50%"},inProgress:true}
 	];
 
 	$scope.skillBucket = [
