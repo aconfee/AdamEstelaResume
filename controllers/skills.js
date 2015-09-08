@@ -127,7 +127,7 @@ function SkillsController($scope){
 		},
 		"Javascript":{ 	
 			yearsUsed:"0.5",
-			projects:"2 + Professional Experience",
+			projects:"4 + Professional Experience",
 			description:"I've recently started using Javascript to contribute to work projects. In order to grow quicker, co-workers are reviewing my solo end-end side projects. I've spent the past two months tirelessly working on side projects in order to iterate fast, fail frequently, and gain experience."
 		},
 		"HTML/CSS":{	
