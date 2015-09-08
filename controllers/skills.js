@@ -125,7 +125,7 @@ function SkillsController($scope){
 			projects:"3 + Professional Experience",
 			description:"I currently use C# as one of my primary languages at work to build a multi-project-scalable, multi-device, multi-product automation framework from the ground up for bleeding edge technology, the Microsoft Hololens. I started using C# my senior year of school to script games in Unity. Outside of school, when I felt more comfortable with both Unity and C#, I worked on Survaillent during a 48 hour game jam (see in portfolio) as one of two programmers."
 		},
-		"Javascript/jQuery":{ 	
+		"Javascript":{ 	
 			yearsUsed:"0.5",
 			projects:"2 + Professional Experience",
 			description:"I've recently started using Javascript to contribute to work projects. In order to grow quicker, co-workers are reviewing my solo end-end side projects. I've spent the past two months tirelessly working on side projects in order to iterate fast, fail frequently, and gain experience."
