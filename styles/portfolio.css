@@ -1,22 +1,31 @@
 /* PORTFOLIO */
 .portfolio-item{
-	width:243px;
-	height:150px;
-	margin: 20px 15px;
+	width:442px;
+	height:248px;
+	/*margin: 20px 15px;*/
 	display:inline-block;
 	float:left;
+	
+	border-radius: 7px;
 
 	background-color:#3498db;
 
     overflow: hidden;
 }
 
-.portfolio-items{
-	width:90%;
+.portfolio-item-container{
+	max-width:442px;
+	margin: 0 10px;
+	text-align:left;
+}
 
+.portfolio-items{
+	width:95%;
+
+	margin:auto;
 	display: inline-block;
 
-	max-width:1092px;
+	max-width:1390px;
 }
 
 .portfolio-tab{

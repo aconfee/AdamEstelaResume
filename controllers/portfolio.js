@@ -11,6 +11,7 @@ function PortfolioController($scope){
 		$scope.hovered = index;
 
 		// This is done in jQuery to be compatible with Isotope filter
+		/*
 		var $portfolioItem = $('.portfolio-item').eq(index);
 		$portfolioItem.css({
 	        'transition': '0.2s ease-in-out',
@@ -19,6 +20,7 @@ function PortfolioController($scope){
 	        '-o-transition':'0.2s ease-in-out',
 	        'transform': 'scale(1.1)',
     	});
+		*/
 	};
 
 	$scope.hideTabs = function(index){
@@ -27,6 +29,7 @@ function PortfolioController($scope){
 		$scope.hovered = -1;
 
 		// This is done in jQuery to be compatible with Isotope filter
+		/*
 		var $portfolioItem = $('.portfolio-item').eq(index);
 		$portfolioItem.css({
 	        'transition': '0.2s ease-in-out',
@@ -35,6 +38,7 @@ function PortfolioController($scope){
 	        '-o-transition':'0.2s ease-in-out',
 	        'transform': 'scale(1)',
     	});
+		*/
 	};
 
 	$scope.filterPortfolio = function(filterValue){
