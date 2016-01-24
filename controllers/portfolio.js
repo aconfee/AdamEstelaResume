@@ -4,6 +4,20 @@ function PortfolioController($scope){
 
 	$scope.hovered = -1;
 	$scope.activeIndex = 0;
+	
+	$scope.showMenu = function(index){
+		var menu = $('.portfolio-item-menu').eq(index);
+		menu.animate({width: "100px", marginLeft:"334px"}, 200);
+		menu.css("border-left", "1px solid rgba(235, 235, 235, 0.7)");
+		$scope.hovered = index;	
+	};
+	
+	$scope.hideMenu = function(index){
+		var menu = $('.portfolio-item-menu').eq(index);
+		menu.animate({width: "0px", marginLeft:"434px"}, 200);
+		menu.css("border-left", "none");
+		$scope.hovered = -1;
+	}
 
 	$scope.showTabs = function(index){
 		var $tabs = $('.portfolio-tabs').eq(index);

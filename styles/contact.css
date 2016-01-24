@@ -15,7 +15,7 @@
 	color:white;
 	font-weight: bold;
 	float:right;
-	background-color: #3498DB;
+	background-color: rgb(68, 80, 96);
 	width:100%;
 	margin-top:20px; 
 	letter-spacing: .3em;
@@ -28,9 +28,9 @@
 
 #send-email-button:hover{
 	background-color: white;
-	color: #3498DB;
+	color: rgb(68, 80, 96);
 }
 
 #contact-screen{
-	background-color: #3498DB;
+	background-color: rgb(68, 80, 96);
 }

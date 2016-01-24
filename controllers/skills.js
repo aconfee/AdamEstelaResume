@@ -7,21 +7,21 @@ function SkillsController($scope){
 	$scope.languages = [
 		{name:"C/C++", val:'85', percent:{width: "85%"},inProgress:false},
 		{name:"C#", val:'70', percent:{width: "70%"},inProgress:true},
-		{name:"Javascript", val:'70', percent:{width: "70%"},inProgress:true},
+		{name:"JAVASCRIPT", val:'70', percent:{width: "70%"},inProgress:true},
 		{name:"HTML/CSS", val:'65', percent:{width: "65%"},inProgress:false},
-		{name:"Java", val:'60', percent:{width: "60%"},inProgress:false},
+		{name:"JAVA", val:'60', percent:{width: "60%"},inProgress:false},
 		//{name:"Shellscript", percent:"60%",inProgress:false}//,
-		{name:"Python", val:'40', percent:{width: "40%"},inProgress:false}
+		{name:"PYTHON", val:'40', percent:{width: "40%"},inProgress:false}
 	];
 
 	$scope.mystyle = {width: $scope.languages[0].percent};
 
 	$scope.tools = [
-		{name:"Unity", val:'85', percent:{width: "85%"},inProgress:true},
+		{name:"UNITY 3D", val:'85', percent:{width: "85%"},inProgress:true},
 		//{name:"Selenium Web Driver", val:'80', percent:{width: "80%"},inProgress:false},
-		{name:"AngularJS", val:'60', percent:{width: "60%"},inProgress:false},
+		{name:"ANGULAR JS", val:'60', percent:{width: "60%"},inProgress:false},
 		//{name:"Azure", val:'20', percent:{width: "20%"},inProgress:true},
-		{name:"NodeJS", val:'50', percent:{width: "50%"},inProgress:true}
+		{name:"NODE JS", val:'50', percent:{width: "50%"},inProgress:true}
 	];
 
 	$scope.skillBucket = [
@@ -105,14 +105,28 @@ function SkillsController($scope){
 			});
 		});
 	};
-
-	$scope.insetLanguageBar = function($index){
+	
+	$scope.selectLanguage = function($index){
+		if($index === $scope.selectedLanguage){
+			return;
+		}
+		
+		// Update the index of the selected language and change the background colors of the previous and current active bar.
+		$(".skill-progress.language").eq($scope.selectedLanguage).css("background-color", "rgb(68, 80, 96)");		
 		$scope.selectedLanguage = $index;
+		$(".skill-progress.language").eq($scope.selectedLanguage).css("background-color", "rgb(123, 137, 157)")
 	};
-
-	$scope.insetToolBar = function($index){
+	
+	$scope.selectTool = function($index){
+		if($index === $scope.selectedTool){
+			return;
+		}
+		
+		// Update the index of the selected tool and change the background colors of the previous and current active bar.
+		$(".skill-progress.tool").eq($scope.selectedTool).css("background-color", "rgb(68, 80, 96)");		
 		$scope.selectedTool = $index;
-	};
+		$(".skill-progress.tool").eq($scope.selectedTool).css("background-color", "rgb(123, 137, 157)")
+	}
 
 	self.descriptions = {
 		"C/C++":{
@@ -122,22 +136,22 @@ function SkillsController($scope){
 		},
 		"C#":{	
 			yearsUsed:"1.5",
-			projects:"3 + Professional Experience",
+			projects:"3 / Professional",
 			description:"I currently use C# as one of my primary languages at work to build a multi-project-scalable, multi-device, multi-product automation framework from the ground up for bleeding edge technology, the Microsoft Hololens. I started using C# my senior year of school to script games in Unity. Outside of school, when I felt more comfortable with both Unity and C#, I worked on Survaillent during a 48 hour game jam (see in portfolio) as one of two programmers."
 		},
-		"Javascript":{ 	
+		"JAVASCRIPT":{ 	
 			yearsUsed:"0.5",
-			projects:"4 + Professional Experience",
+			projects:"4 / Professional",
 			description:"I've recently started using Javascript to contribute to work projects. In order to grow quicker, co-workers are reviewing my solo end-end side projects. I've spent the past two months tirelessly working on side projects in order to iterate fast, fail frequently, and gain experience."
 		},
 		"HTML/CSS":{	
 			yearsUsed:"1",
-			projects:"3 + Professional Exposure",
+			projects:"3 / Professional",
 			description:"My previous job involved writing automated tests for a web service, so I'm extremely comfortable with HTML and CSS. I've recently started using it to develop my own projects, but after professional exposure, there was almost no learning curve. I am familiar with other CSS languages like LESS and SASS, but have not used them yet."
 		},
-		"Java":{		
+		"JAVA":{		
 			yearsUsed:"1",
-			projects:"Professional Experience",
+			projects:"1 / Professional",
 			description:"I've used Java in both of my professional positions. Other than a few easily google-able syntactical differences, I had no trouble jumping in after using C/C++ and C#. Although, it's worth noting that I use Java for test automation, so I'm proficient with trivial use, but not the ins and outs of the language."
 		},
 		"Shellscript":{
@@ -145,19 +159,19 @@ function SkillsController($scope){
 			projects:"3 / Professional Experience",
 			description:"I'm no pro, but I know Shell well enough to complete a task. I've used this at work to write our CI test runner, as well as at school for a few projects. I'm also familiar with bash, but have not directly applied it on a professional level."
 		},
-		"Python":{
+		"PYTHON":{
 			yearsUsed:"1",
-			projects:"1 + Professional Experience",
+			projects:"1 / Professional",
 			description:"I started learning Python for fun during school in order to familiarize myself with a scripting language. This opened my eyes to how easy and quick small projects could be. I immediately started applying it in my math courses, and used it almost exclusively during my 3 month internship for which Python was the engine's primary language. I've continued to use it when appropriate at work."
 		},
 		"Git":{
 			yearsUsed:"0.6",
-			projects:"3 + Professional Experience",
+			projects:"3 / Professional",
 			description:"Git/Github is my current repo at work. I'm familiar with different levels of branching for features/devs/production/etc."
 		},
-		"Unity":{
+		"UNITY 3D":{
 			yearsUsed:"1",
-			projects:"2 + Professional Exposure",
+			projects:"2 / Professional",
 			description:"After developing game engines from the ground up in C++, it was a delight to Unity my Senior year of college. I have built two games with small teams of developers, artists, and designers. I also use Unity lightly in my current position."
 		},
 		"Selenium Web Driver":{
@@ -170,9 +184,9 @@ function SkillsController($scope){
 			projects:"Professional Experience",
 			description:"Maintaining and building up Strider is one of my larger professional roles. I worked with my manager to write our CI test runner pipeline which runs test groups based on changed files automatically, and am one of the primary points of contact for CI issues."
 		},
-		"AngularJS":{
+		"ANGULAR JS":{
 			yearsUsed:"0.5",
-			projects:"2 + Professional Exposure",
+			projects:"2 / Professional",
 			description:"When I started building web apps, AngularJS was recommended to me. I'm exposed to it professionally, and use it on side projects frequently. This very description is data-bound using AngularJS!"
 		},
 		"Azure":{
@@ -180,9 +194,9 @@ function SkillsController($scope){
 			projects:"3",
 			description:"I'm currently using Azure to host some websites and store data. I know the very basics, but haven't had a need for anything beyond that."
 		},
-		"NodeJS":{
+		"NODE JS":{
 			yearsUsed:"0.2",
-			projects:"Professional Exposure",
+			projects:"1",
 			description:"I am actively learning how to develop full web applications with NodeJS and its supported toolset, including MySQL, MongoDB, Express.js, Jade, and more."
 		}
 	}
@@ -201,4 +215,19 @@ function SkillsController($scope){
 		projects:self.descriptions[$scope.tools[0].name].projects,
 		description:self.descriptions[$scope.tools[0].name].description
 	};
+	
+	$(document).ready(function(){
+			
+		$(".skill-button").hover(
+			function(){
+				$(this).find(".skill-progress").css("background-color", "rgb(123, 137, 157)");
+			}, 
+			function(){
+				// If this bar is not active, return to default color.
+				if($(this).find(".skill-progress-active").length === 0){
+					$(this).find(".skill-progress").css("background-color", "rgb(68, 80, 96)");
+				}
+			}
+		);
+	});
 }

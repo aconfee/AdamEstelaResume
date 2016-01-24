@@ -48,14 +48,14 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav" id='main-menu' ng-controller='NavController'>
-	        <li ng-click='scrollToSection("#cover-screen")'><a>Home</a></li>
-	        <li ng-click='scrollToSection("#overview-screen")'><a>Overview</a></li>
-			<li ng-click='scrollToSection("#portfolio-screen")'><a>Projects</a></li>
-	        <li ng-click='scrollToSection("#skills-screen")'><a>Skills</a></li>
-	        <li ng-click='scrollToSection("#education-screen")'><a>Education</a></li>
-	        <li ng-click='scrollToSection("#experience-screen")'><a>Experience</a></li>
-	        <li ng-click='scrollToSection("#contact-screen")'><a>Contact</a></li>
-	        <li><a href="../docs/Adam_Estela_Resume.docx">Download Resume Doc</a></li>
+	        <!--li ng-click='scrollToSection("#cover-screen")'><a>Home</a></li-->
+	        <li ng-click='scrollToSection("#overview-screen")'><a style="color:rgb(35, 35, 35)">PROFILE</a></li>
+			<li ng-click='scrollToSection("#portfolio-screen")'><a style="color:rgb(35, 35, 35)">PROJECTS</a></li>
+	        <li ng-click='scrollToSection("#skills-screen")'><a style="color:rgb(35, 35, 35)">SKILLS</a></li>
+	        <li ng-click='scrollToSection("#education-screen")'><a style="color:rgb(35, 35, 35)">EDUCATION</a></li>
+	        <li ng-click='scrollToSection("#experience-screen")'><a style="color:rgb(35, 35, 35)">EXPERIENCE</a></li>
+	        <li ng-click='scrollToSection("#contact-screen")'><a style="color:rgb(35, 35, 35)">CONTACT</a></li>
+	        <li><a class="active" style="color:rgb(69, 183, 122)" href="../docs/Adam_Estela_Resume.docx">DOWNLOAD RESUME</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -110,9 +110,9 @@
 	<div class='container-fluid screen' id='overview-screen'>
 		<div class='row'>
 			<header class='col-xs-12 text-center section-title'>
-				<h1>OVERVIEW</h1>
+				<h1>PROFILE</h1>
 				<div class='underline'></div>
-				<h2>A Brief History</h2>
+				<h2>A Little Bit About Me</h2>
 			</header>
 		</div>
 		<div class='row section'>
@@ -143,158 +143,138 @@
 	<div class='container-fluid screen' id='portfolio-screen' ng-controller='PortfolioController'>
 		<div class='row'>
 			<header class='col-xs-12 text-center section-title'>
-				<h1>Projects</h1>
+				<h1>PROJECTS</h1>
 				<div class='underline'></div>
 				<h2></h2>
 			</header>
 		</div>
 		<div class='row text-center'>
-			<div class='portfolio-items section'>
+			<div class='portfolio-items-container section'>
 				<!-- Luminosity -->
 				<div class="portfolio-item-container">
-					<div class="text">
-						<h3>Luminosity</h3>
-						<p style="font-size: 0.85em; height:40px;">Engine and game built entirely from scratch in C++. Featured at PAX.</p>
-					</div>
-					<div class='portfolio-item games' ng-mouseenter='showTabs(0)' ng-mouseleave='hideTabs(0)'>
-						<div class='portfolio-tabs'>
-							<a class='portfolio-tab text' ng-show='hovered == 0' href='http://games.digipen.edu/downloads/Luminosity_setup?id=1170&download=25896#.VXZbdEal_9I' target='_blank'>Play</a>
-							<a class='portfolio-tab text' ng-show='hovered == 0' href='https://www.youtube.com/watch?v=YJjCsKeWLiw' target='_blank'>Watch</a>
-							<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 0' href='https://aeprogramming.wordpress.com/games/' target='_blank'><img class='info-icon' src='../resources/info-icon-plain.png'</img></a>
+					<h3>Luminosity</h3>
+					<div class='portfolio-item games' ng-mouseenter='showMenu(0)' ng-mouseleave='hideMenu(0)'>
+						<div class="portfolio-item-menu">
+							<a class="portfolio-item-menu-button" ng-show="hovered == 0" href="http://games.digipen.edu/downloads/Luminosity_setup?id=1170&download=25896#.VXZbdEal_9I" target="_blank">PLAY</a>
+							<a class="portfolio-item-menu-button" ng-show="hovered == 0" href="https://www.youtube.com/watch?v=YJjCsKeWLiw" target="_blank">WATCH</a>
+							<a class="portfolio-item-menu-button" ng-show="hovered == 0" href="https://aeprogramming.wordpress.com/games/" target="_blank">MORE</a>
 						</div>
 						<img class='img-responsive' src='../resources/portfolio/hi/Luminosity_2_hires.jpg'></img>
 					</div>
+					<p>Engine and game built entirely from scratch in C++. Featured at PAX.</p>
 				</div>
 				<!-- Hololens -->
 				<div class="portfolio-item-container">
-					<div class="text">
-						<h3>Microsoft Hololens</h3>
-						<p style="font-size: 0.85em; height:40px;">Building an automation framework in C# to work across several products.</p>
-					</div>
-					<div class='portfolio-item games' ng-mouseenter='showTabs(1)' ng-mouseleave='hideTabs(1)'>
-						<div class='portfolio-tabs'>
-							<a class='portfolio-tab text' ng-show='hovered == 1' href='http://www.microsoft.com/microsoft-hololens/en-us' target='_blank'>Official Site</a>
-							<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 1' href='http://www.microsoft.com/microsoft-hololens/en-us' target='_blank'><img class='info-icon' src='../resources/info-icon-plain.png'</img></a>
+					<h3>Microsoft Hololens</h3>
+					<div class='portfolio-item games' ng-mouseenter='showMenu(1)' ng-mouseleave='hideMenu(1)'>
+						<div class="portfolio-item-menu">
+							<a class="portfolio-item-menu-button" ng-show="hovered == 1" href="http://www.microsoft.com/microsoft-hololens/en-us" target="_blank">VIEW</a>
 						</div>
 						<img class='img-responsive' src='../resources/portfolio/hi/onsightImage.jpg'></img>
 					</div>
+					<p>Building an automation framework in C# to work across several products.</p>
 				</div>
 				<!-- Graphics Projects -->
 				<div class="portfolio-item-container">
-					<div class="text">
-						<h3>Graphics</h3>
-						<p style="font-size: 0.85em; height:40px;">Built 3D pipeline, math library, shaders, and shadows from scratch in C++.</p>
-					</div>
-					<div class='portfolio-item' ng-mouseenter='showTabs(2)' ng-mouseleave='hideTabs(2)'>
-						<div class='portfolio-tabs'>
-							<a class='portfolio-tab text' ng-show='hovered == 2' href='https://www.youtube.com/user/MrAconfee/videos' target='_blank'>Watch</a>
-							<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 2' href='https://aeprogramming.wordpress.com/graphics/' target='_blank'><img class='info-icon' src='../resources/info-icon-plain.png'</img></a>
+					<h3>Graphics</h3>
+					<div class='portfolio-item games' ng-mouseenter='showMenu(2)' ng-mouseleave='hideMenu(2)'>
+						<div class="portfolio-item-menu">
+							<a class="portfolio-item-menu-button" ng-show="hovered == 2" href="https://www.youtube.com/user/MrAconfee/videos" target="_blank">WATCH</a>
+							<a class="portfolio-item-menu-button" ng-show="hovered == 2" href="https://aeprogramming.wordpress.com/graphics/" target="_blank">MORE</a>
 						</div>
-						<img class='img-responsive' src='../resources/portfolio/hi/graphics.png'></img>
+						<img class='img-responsive' src="../resources/portfolio/hi/graphics.png"></img>
 					</div>
+					<p style="height:40px;">Built 3D pipeline, math library, shaders, and shadows from scratch in C++.</p>
 				</div>
 				<!-- Survaillent -->
 				<div class="portfolio-item-container">
-					<div class="text">
-						<h3>Surveillant</h3>
-						<p style="font-size: 0.85em; height:40px;">Horror game built in 48 hours with Unity.</p>
-					</div>
-					<div class='portfolio-item' ng-mouseenter='showTabs(3)' ng-mouseleave='hideTabs(3)'>
-						<div class='portfolio-tabs'>
-							<a class='portfolio-tab text' ng-show='hovered == 3' href='http://gamejolt.com/games/surveillant/107686' target='_blank'>Play</a>
-							<a class='portfolio-tab text' ng-show='hovered == 3' href='https://www.youtube.com/watch?v=4pAcfkc9fhU&feature=youtu.be' target='_blank'>Watch</a>
-							<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 3' href='https://aeprogramming.wordpress.com/games/' target='_blank'><img class='info-icon' src='../resources/info-icon-plain.png'</img></a>
+					<h3>Surveillant</h3>
+					<div class='portfolio-item games' ng-mouseenter='showMenu(3)' ng-mouseleave='hideMenu(3)'>
+						<div class="portfolio-item-menu">
+							<a class="portfolio-item-menu-button" ng-show="hovered == 3" href="http://gamejolt.com/games/surveillant/107686" target="_blank">PLAY</a>
+							<a class="portfolio-item-menu-button" ng-show="hovered == 3" href="https://www.youtube.com/watch?v=4pAcfkc9fhU&feature=youtu.be" target="_blank">WATCH</a>
+							<a class="portfolio-item-menu-button" ng-show="hovered == 3" href="https://aeprogramming.wordpress.com/games/" target="_blank">MORE</a>
 						</div>
-						<img class='img-responsive' src='../resources/portfolio/hi/survaillent_3.png'></img>
+						<img class='img-responsive' src="../resources/portfolio/hi/survaillent_3.png"></img>
 					</div>
+					<p style="height:40px;">Horror game built in 48 hours with Unity.</p>
 				</div>
 				<!-- Sweet Home -->
 				<div class="portfolio-item-container">
-					<div class="text">
-						<h3>Sweet Home</h3>
-						<p style="font-size: 0.85em; height:40px;">Horror game built in 48 hours with Unreal. Learned Unreal on the fly.</p>
-					</div>
-					<div class='portfolio-item' ng-mouseenter='showTabs(4)' ng-mouseleave='hideTabs(4)'>
-						<div class='portfolio-tabs'>
-							<a class='portfolio-tab text' ng-show='hovered == 4' href='http://gamejolt.com/games/sweet-home/107328' target='_blank'>Play</a>
-							<a class='portfolio-tab text' ng-show='hovered == 4' href='https://www.youtube.com/watch?v=h2tObm8D7N0' target='_blank'>Watch</a>
+					<h3>Sweet Home</h3>
+					<div class='portfolio-item games' ng-mouseenter='showMenu(4)' ng-mouseleave='hideMenu(4)'>
+						<div class="portfolio-item-menu">
+							<a class="portfolio-item-menu-button" ng-show="hovered == 4" href="http://gamejolt.com/games/sweet-home/107328" target="_blank">PLAY</a>
+							<a class="portfolio-item-menu-button" ng-show="hovered == 4" href="https://www.youtube.com/watch?v=h2tObm8D7N0" target="_blank">WATCH</a>
 						</div>
-						<img class='img-responsive' src='../resources/portfolio/hi/sweethome.png'></img>
+						<img class='img-responsive' src="../resources/portfolio/hi/sweethome.png"></img>
 					</div>
+					<p style="height:40px;">Horror game built in 48 hours with Unreal. Learned Unreal on the fly.</p>
 				</div>
 				<!-- Resume Site -->
 				<div class="portfolio-item-container">
-					<div class="text">
-						<h3>This Site</h3>
-						<p style="font-size: 0.85em; height:40px;">Spent one month learning web development outside of work to build this site.</p>
-					</div>
-					<div class='portfolio-item' ng-mouseenter='showTabs(5)' ng-mouseleave='hideTabs(5)'>
-						<div class='portfolio-tabs'>
-							<a class='portfolio-tab text' ng-show='hovered == 5' href='http://adamestelaresume.azurewebsites.net/' target='_blank'>Live</a>
-							<a class='portfolio-tab text' ng-show='hovered == 5' href='https://github.com/aconfee/AdamEstelaResume' target='_blank'>Git</a>
+					<h3>This Site</h3>
+					<div class='portfolio-item games' ng-mouseenter='showMenu(5)' ng-mouseleave='hideMenu(5)'>
+						<div class="portfolio-item-menu">
+							<a class="portfolio-item-menu-button" ng-show="hovered == 5" href="http://adamestelaresume.azurewebsites.net/" target="_blank">VIEW</a>
+							<a class="portfolio-item-menu-button" ng-show="hovered == 5" href="https://github.com/aconfee/AdamEstelaResume" target="_blank">GIT</a>
 						</div>
-						<img class='img-responsive' src='../resources/portfolio/hi/resume_hi.png'></img>
+						<img class='img-responsive' src="../resources/portfolio/hi/resume_hi.png"></img>
 					</div>
+					<p style="height:40px;">Spent one month learning web development outside of work to build this site.</p>
 				</div>
 				<!-- Wub Wub Racer Magic -->
 				<div class="portfolio-item-container">
-					<div class="text">
-						<h3>Wub Wub Racer Magic</h3>
-						<p style="font-size: 0.85em; height:40px;">Survival hell. Engine and game built entirely from scratch in C++.</p>
-					</div>
-					<div class='portfolio-item' ng-mouseenter='showTabs(6)' ng-mouseleave='hideTabs(6)'>
-						<div class='portfolio-tabs'>
-							<a class='portfolio-tab text' ng-show='hovered == 6' href='http://games.digipen.edu/downloads/WubWubRacerMagic_setup?id=1170&download=26685#.VXZhC0al_9J' target='_blank'>Play</a>
-							<a class='portfolio-tab text' ng-show='hovered == 6' href='https://www.youtube.com/watch?v=8g9GvAu6Os4' target='_blank'>Watch</a>
-							<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 6' href='https://aeprogramming.wordpress.com/games/' target='_blank'><img class='info-icon' src='../resources/info-icon-plain.png'</img></a>
+					<h3>Wub Wub Racer Magic</h3>
+					<div class='portfolio-item games' ng-mouseenter='showMenu(6)' ng-mouseleave='hideMenu(6)'>
+						<div class="portfolio-item-menu">
+							<a class="portfolio-item-menu-button" ng-show="hovered == 6" href="http://games.digipen.edu/downloads/WubWubRacerMagic_setup?id=1170&download=26685#.VXZhC0al_9J" target="_blank">PLAY</a>
+							<a class="portfolio-item-menu-button" ng-show="hovered == 6" href="https://www.youtube.com/watch?v=8g9GvAu6Os4" target="_blank">WATCH</a>
+							<a class="portfolio-item-menu-button" ng-show="hovered == 6" href="https://aeprogramming.wordpress.com/games/" target="_blank">MORE</a>
 						</div>
-						<img class='img-responsive' src='../resources/portfolio/hi/WubWubRacerMagic.png'></img>
+						<img class='img-responsive' src="../resources/portfolio/hi/WubWubRacerMagic.png"></img>
 					</div>
+					<p style="height:40px;">Survival hell. Engine and game built entirely from scratch in C++.</p>
 				</div>
 				<!-- AI Class Project -->
 				<div class="portfolio-item-container">
-					<div class="text">
-						<h3>Artificial Intelligence</h3>
-						<p style="font-size: 0.85em; height:40px;">A* with obstructing object detection, and several influencing heat maps.</p>
-					</div>
-					<div class='portfolio-item' ng-mouseenter='showTabs(7)' ng-mouseleave='hideTabs(7)'>
-						<div class='portfolio-tabs'>
-							<a class='portfolio-tab text' ng-show='hovered == 7' href='https://www.youtube.com/watch?v=d_7Cx3_slsg&list=UUlfeZAnjyOWyE3ysVMvWlhQ' target='_blank'>Watch</a>
-							<a class='portfolio-tab portfolio-tab-right text' ng-show='hovered == 7' href='https://aeprogramming.wordpress.com/artificial-intelligence/' target='_blank'><img class='info-icon' src='../resources/info-icon-plain.png'</img></a>
+					<h3>Artificial Intelligence</h3>
+					<div class='portfolio-item games' ng-mouseenter='showMenu(7)' ng-mouseleave='hideMenu(7)'>
+						<div class="portfolio-item-menu">
+							<a class="portfolio-item-menu-button" ng-show="hovered == 7" href="https://www.youtube.com/watch?v=d_7Cx3_slsg&list=UUlfeZAnjyOWyE3ysVMvWlhQ" target="_blank">WATCH</a>
+							<a class="portfolio-item-menu-button" ng-show="hovered == 7" href="https://aeprogramming.wordpress.com/artificial-intelligence/" target="_blank">MORE</a>
 						</div>
-						<img class='img-responsive' src='../resources/portfolio/hi/ai1.png'></img>
+						<img class='img-responsive' src="../resources/portfolio/hi/ai1.png"></img>
 					</div>
+					<p style="height:40px;">A* with obstructing object detection, and several influencing heat maps.</p>
 				</div>
 				<!-- Kim Gallery -->
 				<div class="portfolio-item-container">
-					<div class="text">
-						<h3>Art Portfolio</h3>
-						<p style="font-size: 0.85em; height:40px;">Interactive single-page portfolio built with AngularJS.</p>
-					</div>
-					<div class='portfolio-item' ng-mouseenter='showTabs(8)' ng-mouseleave='hideTabs(8)'>
-						<div class='portfolio-tabs'>
-							<a class='portfolio-tab text' ng-show='hovered == 8' href='http://kimgreenoughportfolio.azurewebsites.net/' target='_blank'>Live</a>
-							<a class='portfolio-tab text' ng-show='hovered == 8' href='https://github.com/aconfee/KimPortfolio' target='_blank'>Git</a>
+					<h3>Art Portfolio</h3>
+					<div class='portfolio-item games' ng-mouseenter='showMenu(8)' ng-mouseleave='hideMenu(8)'>
+						<div class="portfolio-item-menu">
+							<a class="portfolio-item-menu-button" ng-show="hovered == 8" href="http://kimgreenoughportfolio.azurewebsites.net/" target="_blank">LIVE</a>
+							<a class="portfolio-item-menu-button" ng-show="hovered == 8" href="https://github.com/aconfee/KimPortfolio" target="_blank">GIT</a>
 						</div>
-						<img class='img-responsive' src='../resources/portfolio/hi/kimsite.png'></img>
+						<img class='img-responsive' src="../resources/portfolio/hi/kimsite.png"></img>
 					</div>
+					<p style="height:40px;">Interactive single-page portfolio built with AngularJS.</p>
 				</div>
 				<!-- PaperG -->
 				<div class="portfolio-item-container">
-					<div class="text">
-						<h3>PaperG, Inc. Add Platform</h3>
-						<p style="font-size: 0.85em; height:40px;">Built automation framework, wrote front-end code, and optimized the build pipeline.</p>
-					</div>
-					<div class='portfolio-item' ng-mouseenter='showTabs(9)' ng-mouseleave='hideTabs(9)'>
-						<div class='portfolio-tabs'>
-							<a class='portfolio-tab text' ng-show='hovered == 9' href='http://www.paperg.com/' target='_blank'>Official Site</a>
+					<h3>PaperG, Inc. Add Platform</h3>
+					<div class='portfolio-item games' ng-mouseenter='showMenu(9)' ng-mouseleave='hideMenu(9)'>
+						<div class="portfolio-item-menu">
+							<a class="portfolio-item-menu-button" ng-show="hovered == 9" href="http://www.paperg.com/" target="_blank">VIEW</a>
 						</div>
-						<img class='img-responsive' src='../resources/portfolio/hi/paperGimage.png'></img>
+						<img class='img-responsive' src="../resources/portfolio/hi/paperGimage.png"></img>
 					</div>
+					<p style="height:40px;">Built automation framework, wrote front-end code, and optimized the build pipeline.</p>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- SKILLS -->
 	<div class='container-fluid screen' id='skills-screen' ng-controller='SkillsController'>
 		<div class='row'>
 			<header class='col-xs-12 text-center section-title'>
@@ -305,45 +285,77 @@
 		</div>
 		<div class='row section'>
 			<div class='col-xs-3 col-xs-offset-2'>
-				<span class='text-header'>LANGUAGES</span>
-				<div class="progress" ng-class="{'progress-selected': $index == selectedLanguage}" ng-repeat='language in languages' ng-click='displayLanguageDescription(language.name); insetLanguageBar($index); hideTip();'>
-				  <div class="progress-bar progress-bar-success" ng-class="{'progress-selected': $index == selectedLanguage, 'progress-bar-striped active': language.inProgress}" role="progressbar" aria-valuenow="{{ language.val }}" aria-valuemin="0" aria-valuemax="100" ng-style="language.percent">
-				    <p>{{ language.name }}</p>
-				  </div>
-				  <img class='bar-info' src='../resources/info-icon-grey.png' ng-show='$index != selectedLanguage'></img>
+				<p class='text-header'>LANGUAGES</p>
+				
+				<!-- Skill button/progress -->
+				<div class="skill-button-container" ng-repeat="language in languages">
+					<div class="left-bracket" ng-show="$index == selectedLanguage"><img src="../resources/bracketLeftSmall.png"></img></div>
+					<div class='skill-button' ng-click="displayLanguageDescription(language.name); selectLanguage($index);">
+						<div class="skill-progress language" ng-class="{'skill-progress-active': $index == selectedLanguage}" style="width:{{language.val}}%">
+							<p>{{ language.name }}</p>
+						</div>
+					</div>
+					<div class="right-bracket" ng-show="$index == selectedLanguage"><img src="../resources/bracketRightSmall.png"></img></div>
 				</div>
 			</div>
-			<div class='col-xs-4 col-xs-offset-1 right-align' id='languageDescription'>
-				<p class='text-header'>{{ languageDisplay.name }}</p>
-				<p class='text'>
-					<span class='skill-attribute'>Years Actively Used:</span> <b>{{ languageDisplay.yearsUsed }}</b>
-					<br/>
-					<span class='skill-attribute'>Major Projects Used:</span> <b>{{ languageDisplay.projects }}</b>
-					<br/>
-					<p class='left-align attribute-description'>{{ languageDisplay.description }}</p>
-				</p>
-			</div>
+			
+			<!-- Skill description -->
+			<div class="col-xs-1">
+				<div class="left-bracket-big bracket-big"><img src="../resources/bracketLeftLarge.png"></img></div>
+			</div>			
+			<div class='col-xs-4' id='languageDescription'>
+				<div class="skill-description-container">
+					<p class='text-header' style="text-align:center">{{ languageDisplay.name }}</p>
+					<p class='text'>
+						<span class='skill-attribute'>Years:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ languageDisplay.yearsUsed }}
+						<br/>
+						<span class='skill-attribute'>Projects:</span> &nbsp;&nbsp;{{ languageDisplay.projects }}
+						<br/>
+						<p class='left-align attribute-description'>{{ languageDisplay.description }}</p>
+					</p>
+				</div>
+			</div>			
+			<div class="col-xs-1">
+				<div class="right-bracket-big bracket-big"><img src="../resources/bracketRightLarge.png"></img></div>
+			</div>			
 		</div>
+		
+		<!-- TOOLS -->
 		<div class='row section'>
 			<div class='col-xs-3 col-xs-offset-2'>
 				<p class='text-header'>TOOLS</p>
-				<div class="progress" ng-class="{'progress-selected': $index == selectedTool}" ng-repeat='tool in tools' ng-click='displayToolDescription(tool.name); insetToolBar($index); hideTip();'>
-				  <div class="progress-bar progress-bar-success" ng-class="{'progress-selected': $index == selectedTool, 'progress-bar-striped active': tool.inProgress}" role="progressbar" aria-valuenow="{{ tool.val }}" aria-valuemin="0" aria-valuemax="100" ng-style="tool.percent">
-				    <p>{{ tool.name }}</p>
-				  </div>
-				  <img class='bar-info' src='../resources/info-icon-grey.png' ng-show='$index != selectedTool'></img>
+				
+				<!-- Tool button/progress -->
+				<div class="skill-button-container" ng-repeat="tool in tools">
+					<div class="left-bracket" ng-show="$index == selectedTool"><img src="../resources/bracketLeftSmall.png"></img></div>
+					<div class='skill-button' ng-click="displayToolDescription(tool.name); selectTool($index);">
+						<div class="skill-progress tool" ng-class="{'skill-progress-active': $index == selectedTool}" style="width:{{tool.val}}%">
+							<p>{{ tool.name }}</p>
+						</div>
+					</div>
+					<div class="right-bracket" ng-show="$index == selectedTool"><img src="../resources/bracketRightSmall.png"></img></div>
 				</div>
 			</div>
-			<div class='col-xs-4 col-xs-offset-1 right-align' id='toolDescription'>
-				<p class='text-header'>{{ toolDisplay.name }}</p>
-				<p class='text'>
-					<span class='skill-attribute'>Years Actively Used:</span> <b>{{ toolDisplay.yearsUsed }}</b>
-					<br/>
-					<span class='skill-attribute'>Major Projects Used:</span> <b>{{ toolDisplay.projects }}</b>
-					<br/>
-					<p class='left-align attribute-description'>{{ toolDisplay.description }}</p>
-				</p>
+			
+			<!-- Tool description -->
+			<div class="col-xs-1">
+				<div class="left-bracket-big bracket-big"><img src="../resources/bracketLeftLarge.png"></img></div>
+			</div>	
+			<div class='col-xs-4' id='toolDescription'>
+				<div class="skill-description-container">
+					<p class='text-header' style="text-align:center">{{ toolDisplay.name }}</p>
+					<p class='text'>
+						<span class='skill-attribute'>Years:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ toolDisplay.yearsUsed }}
+						<br/>
+						<span class='skill-attribute'>Projects:</span>&nbsp;&nbsp;{{ toolDisplay.projects }}
+						<br/>
+						<p class='left-align attribute-description'>{{ toolDisplay.description }}</p>
+					</p>
+				</div>
 			</div>
+			<div class="col-xs-1">
+				<div class="right-bracket-big bracket-big"><img src="../resources/bracketRightLarge.png"></img></div>
+			</div>	
 		</div>
 		<div class='row section'>
 			<div class='col-xs-10 col-xs-offset-2'>
@@ -370,10 +382,10 @@
 					DIGIPEN INSTITUTE OF TECHNOLOGY
 				</span><span>Redmond, WA</span>
 				<p>B.S. in Computer Science &amp; Minor in Mathematics </p>
-				<p><b>Graduated:</b> December 13th, 2013</p>
+				<p><b style="color:rgb(154, 0, 0)">Graduated:</b> December 13th, 2013</p>
 				<br/>
-				<p><b>Tutored:</b> 3D Graphics Implementation, Game Engine Implementation Techniques, English, CS Fundamentals, and Math.</p>
-				<p><b>Interned:</b> I was chosen among several students to intern in DigiPen's R&D department for my final semester.</p> 
+				<p><b style="color:rgb(154, 0, 0)">Tutored:</b> 3D Graphics Implementation, Game Engine Implementation Techniques, English, CS Fundamentals, and Math.</p>
+				<p><b style="color:rgb(154, 0, 0)">Interned:</b> I was chosen among several students to intern in DigiPen's R&D department for my final semester.</p> 
 				<p>"Adam has been great to work with. I have worked with him on multiple game projects, side projects in our spare time, and tutored with him. He is unbelievably hard working and motivated in everything he does." -David James / SDE Microsoft
 			</div>
 		</div>
@@ -386,12 +398,12 @@
 			</header>
 		</div>
 		<div class='section'>
-			<div id='microsoft' class='col-xs-4 col-xs-offset-1 text'>
+			<div id='microsoft' class='col-xs-5 col-xs-offset-1 text'>
 				<span>
 					<a class='text-header' href='http://www.microsoft.com/microsoft-hololens/en-us' target='_blank'>Microsoft</a>
 				</span><span>Redmond, WA</span>
 				<p>Software Engineer in Test II / Jan 2015 - Current</p>
-				<img class="img-responsive img-rounded" src="../resources/onsightImage.jpg"></img>
+				<img class="img-responsive" style="border-radius:2px;" src="../resources/onsightImage.jpg"></img>
 				<br/>
 				<p>
 					I currently work on several HoloLens experience teams to develop an automation framework and toolset, from the ground up, that scales across multiple products and devices.
@@ -413,12 +425,12 @@
 					-->
 				</p>
 			</div>
-			<div id='paperg' class='col-xs-4 col-xs-offset-2 text'>
+			<div id='paperg' class='col-xs-5 text' style="margin-left:25px">
 				<span>
 					<a class='text-header' href='http://www.paperg.com/' target='_blank'>PaperG</a>
 				</span><span>Kirkland, WA</span>
 				<p>Software Engineer in Test II / Feb 2014 - Jan 2015</p>
-				<img class="img-responsive img-rounded" src="../resources/paperGimage.png"></img>
+				<img class="img-responsive" style="border-radius:2px;" src="../resources/paperGimage.png"></img>
 				<br/>
 				<p>
 					I was one of two SDETs who built and expanded our testing and CI infrastructure.
@@ -493,7 +505,7 @@
 			</div>
 		</div>
 		<div class='col-xs-8 col-xs-offset-2 section text-center'>
-			<p style='color:white;letter-spacing:0.2em;' class='text'>All content &copy; 2014-2015 Adam Confe Estela, all rights reserved.</p>
+			<p style='color:white;letter-spacing:0.2em;' class='text'>All content &copy; 2014-2016 Adam Confe Estela, all rights reserved.</p>
 		</div>
 	</div>
 	

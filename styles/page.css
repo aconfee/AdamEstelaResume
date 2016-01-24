@@ -1,3 +1,13 @@
+@font-face {
+    font-family: bebasneue;
+    src: url("../fonts/bebasneue/BebasNeue.otf") format("otf");
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url("../fonts/montserrat/Montserrat-Light.otf") format("otf");
+}
+
 body{
 	font-family: 'Oxygen', sans-serif;
 
@@ -12,7 +22,7 @@ body{
 }
 
 .font-dark{
-	color:#555555;
+	color:rgb(35, 35, 35);
 }
 
 .center{
@@ -21,29 +31,32 @@ body{
 }
 
 h1{
-	font-weight:bold;
+	font-family: montserrat;
+	font-size: 22pt;
+	letter-spacing: 130;
+	/*font-weight:bold;
 	font-size: 3em;
-	letter-spacing: .2em;
-	color:#555555;
+	letter-spacing: .2em;*/
+	color:rgb(35, 35, 35); 
 }
 
 h2{
 	font-size:1.5em;
 	letter-spacing: .1em;
-	color:#555555;
+	color:rgb(159, 159, 159);
 }
 
 /* PAGE */
 .text-header{
 	font-size: 1.4em;
 	font-weight: bold;
-	color:#757575;
+	color:rgb(66, 66, 66);
 }
 
 .text{
 	font-size: 1.2em;
 	word-wrap:break-word;
-	color:#757575;
+	color:rgb(35, 35, 35);
 }
 
 .screen{
@@ -53,7 +66,7 @@ h2{
 }
 
 .underline{
-	border-top: 2px solid #409edd;
+	border-top: 2px solid rgb(69, 183, 122);
 	max-width: 100px;
 	width:100px;
 	display: inline-block;
