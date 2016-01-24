@@ -10,8 +10,7 @@
 
 @font-face{ 
 	font-family: 'MyWebFont';
-
-	src: url('../fonts/Action_Man_Shaded-webfont.ttf') format('truetype');
+	src: url('../fonts/Action_Man_Shaded-webfont.woff') format('woff');
 }
 
 body{
