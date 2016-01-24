@@ -9,7 +9,7 @@
 }
 
 body{
-	font-family: 'CustomFont', sans-serif;
+	font-family: "Oxygen", "CustomFont", sans-serif;
 
 	background-image: url('../resources/origBackground.jpg');
 	background-size: cover;
