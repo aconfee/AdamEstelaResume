@@ -4,13 +4,17 @@
 }
 
 @font-face {
-    font-family: montserrat;
-    src: 	url(../fonts/montserrat/Montserrat-Light.ttf);
+    font-family: "montserrat";
+    src: 	url(../fonts/montserrat/Montserrat-Light.otf);
 }
 
 @font-face{ 
 	font-family: 'MyWebFont';
-	src: url('../fonts/Action_Man_Shaded-webfont.woff') format('woff');
+	src: url('../fonts/Action_Man_Shaded-webfont.eot');
+	src: url('../fonts/Action_Man_Shaded-webfont') format('eot'),
+	     url('../fonts/Action_Man_Shaded-webfont.woff') format('woff'),
+	     url('../fonts/Action_Man_Shaded-webfont.ttf') format('truetype'),
+	     url('../fonts/Action_Man_Shaded-webfont.svg#webfont') format('svg');
 }
 
 body{
