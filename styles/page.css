@@ -1,11 +1,11 @@
 @font-face {
     font-family: bebasneue;
-    src: url("../fonts/bebasneue/BebasNeue.otf") format("otf");
+    src: url(../fonts/bebasneue/BebasNeue.otf) format("otf");
 }
 
 @font-face {
     font-family: montserrat;
-    src: url("../fonts/montserrat/Montserrat-Light.otf") format("otf");
+    src: url(../fonts/montserrat/Montserrat-Light.otf) format("otf");
 }
 
 body{
