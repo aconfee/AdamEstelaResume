@@ -1,24 +1,15 @@
-@font-face {
-    font-family: bebasneue;
-    src: url(../fonts/bebasneue/BebasNeue.otf) format("otf");
-}
-
-@font-face {
-    font-family: "montserrat";
-    src: 	url(../fonts/montserrat/Aaargh.ttf);
-}
-
+/* Firefox uses .ttf. Must include web kit for fonts to work.*/
 @font-face{ 
-	font-family: 'MyWebFont';
-	src: url('../fonts/Action_Man_Shaded-webfont.eot');
-	src: url('../fonts/Action_Man_Shaded-webfont') format('eot'),
-	     url('../fonts/Action_Man_Shaded-webfont.woff') format('woff'),
-	     url('../fonts/Action_Man_Shaded-webfont.ttf') format('truetype'),
-	     url('../fonts/Action_Man_Shaded-webfont.svg#webfont') format('svg');
+	font-family: 'CustomFont';
+	src: url('../fonts/bonvenocf_light_macroman/BonvenoCF-Light-webfont.eot');
+	src: url('../fonts/bonvenocf_light_macroman/BonvenoCF-Light-webfont') format('eot'),
+	     url('../fonts/bonvenocf_light_macroman/BonvenoCF-Light-webfont.woff') format('woff'),
+	     url('../fonts/bonvenocf_light_macroman/BonvenoCF-Light-webfont.ttf') format('truetype'),
+	     url('../fonts/bonvenocf_light_macroman/BonvenoCF-Light-webfont.svg#webfont') format('svg');
 }
 
 body{
-	font-family: 'Oxygen', sans-serif;
+	font-family: 'CustomFont', sans-serif;
 
 	background-image: url('../resources/origBackground.jpg');
 	background-size: cover;
@@ -40,7 +31,7 @@ body{
 }
 
 h1{
-	font-family: montserrat;
+	/*font-family: montserrat;*/
 	font-size: 22pt;
 	letter-spacing: 130;
 	/*font-weight:bold;
