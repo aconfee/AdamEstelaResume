@@ -1,15 +1,15 @@
 /* Firefox uses .ttf. Must include web kit for fonts to work.*/
 @font-face{ 
-	font-family: 'CustomFont';
-	src: url('../fonts/bonvenocf_light_macroman/BonvenoCF-Light-webfont.eot');
-	src: url('../fonts/bonvenocf_light_macroman/BonvenoCF-Light-webfont') format('eot'),
-	     url('../fonts/bonvenocf_light_macroman/BonvenoCF-Light-webfont.woff') format('woff'),
-	     url('../fonts/bonvenocf_light_macroman/BonvenoCF-Light-webfont.ttf') format('truetype'),
-	     url('../fonts/bonvenocf_light_macroman/BonvenoCF-Light-webfont.svg#webfont') format('svg');
+	font-family: 'openSansLight';
+	src: url('../fonts/opensans/opensans_light_macroman/OpenSans-Light-webfont.eot');
+	src: url('../fonts/opensans/opensans_light_macroman/OpenSans-Light-webfont.eot?iefix') format('eot'),
+	     url('../fonts/opensans/opensans_light_macroman/OpenSans-Light-webfont.woff') format('woff'),
+	     url('../fonts/opensans/opensans_light_macroman/OpenSans-Light-webfont.ttf') format('truetype'),
+	     url('../fonts/opensans/opensans_light_macroman/OpenSans-Light-webfont.svg#webfont') format('svg');
 }
 
 body{
-	font-family: "Oxygen", "CustomFont", sans-serif;
+	font-family: "openSansLight", "Oxygen", sans-serif;
 
 	background-image: url('../resources/origBackground.jpg');
 	background-size: cover;
@@ -31,7 +31,6 @@ body{
 }
 
 h1{
-	/*font-family: montserrat;*/
 	font-size: 22pt;
 	letter-spacing: 130;
 	/*font-weight:bold;

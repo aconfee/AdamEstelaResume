@@ -1,4 +1,13 @@
 /* COVER */ 
+@font-face{ 
+	font-family: 'bebas';
+	src: url('../fonts/bebas/bebas_regular_macroman/BEBAS___-webfont.eot');
+	src: url('../fonts/bebas/bebas_regular_macroman/BEBAS___-webfont.eot?iefix') format('eot'),
+	     url('../fonts/bebas/bebas_regular_macroman/BEBAS___-webfont.woff') format('woff'),
+	     url('../fonts/bebas/bebas_regular_macroman/BEBAS___-webfont.ttf') format('truetype'),
+	     url('../fonts/bebas/bebas_regular_macroman/BEBAS___-webfont.svg#webfont') format('svg');
+}
+
 #cover-screen{
 	margin-bottom:10%;
 }
@@ -8,6 +17,7 @@
 }
 
 .cover-text{
+	font-family: bebas;
 	font-weight: bold;
 	font-size:4em;
 	letter-spacing: .2em;

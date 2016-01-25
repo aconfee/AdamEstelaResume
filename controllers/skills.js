@@ -5,10 +5,10 @@ function SkillsController($scope){
 	$scope.showTip = true;
 
 	$scope.languages = [
-		{name:"C/C++", val:'85', percent:{width: "85%"},inProgress:false},
+		{name:"C / C++", val:'85', percent:{width: "85%"},inProgress:false},
 		{name:"C#", val:'70', percent:{width: "70%"},inProgress:true},
 		{name:"JAVASCRIPT", val:'70', percent:{width: "70%"},inProgress:true},
-		{name:"HTML/CSS", val:'65', percent:{width: "65%"},inProgress:false},
+		{name:"HTML / CSS", val:'65', percent:{width: "65%"},inProgress:false},
 		{name:"JAVA", val:'60', percent:{width: "60%"},inProgress:false},
 		//{name:"Shellscript", percent:"60%",inProgress:false}//,
 		{name:"PYTHON", val:'40', percent:{width: "40%"},inProgress:false}
@@ -21,7 +21,8 @@ function SkillsController($scope){
 		//{name:"Selenium Web Driver", val:'80', percent:{width: "80%"},inProgress:false},
 		{name:"ANGULAR JS", val:'60', percent:{width: "60%"},inProgress:false},
 		//{name:"Azure", val:'20', percent:{width: "20%"},inProgress:true},
-		{name:"NODE JS", val:'50', percent:{width: "50%"},inProgress:true}
+		{name:"NODE JS / EXPRESS", val:'50', percent:{width: "50%"},inProgress:true},
+		{name:"MONGO / SQL", val:"40", percent:{width: "40%"}, inProgress:true}
 	];
 
 	$scope.skillBucket = [
@@ -129,30 +130,30 @@ function SkillsController($scope){
 	}
 
 	self.descriptions = {
-		"C/C++":{
+		"C / C++":{
 			yearsUsed:"4",
-			projects:"4",
-			description:"My fundamentals were learned in C and all 4 years of college involved heavy use of C++. Along with typical course assignments, I worked on 4 year-long projects with several different teams. It's been 7 months since my last major C++ project. "
+			projects:"6",
+			description:"My fundamentals were learned in C and all 4 years of college involved heavy use of C++ and implementation of most common STL containers. Along with typical course assignments, I worked on 4 game engines with several different teams built from the ground up in C++."
 		},
 		"C#":{	
-			yearsUsed:"1.5",
-			projects:"3 / Professional",
-			description:"I currently use C# as one of my primary languages at work to build a multi-project-scalable, multi-device, multi-product automation framework from the ground up for bleeding edge technology, the Microsoft Hololens. I started using C# my senior year of school to script games in Unity. Outside of school, when I felt more comfortable with both Unity and C#, I worked on Survaillent during a 48 hour game jam (see in portfolio) as one of two programmers."
+			yearsUsed:"2.5",
+			projects:"4 / Professional",
+			description:"I currently use C# as my primary language at work develop an automation framework and toolset from the ground up that scales across multiple products and vastly varying devices, including the HoloLens. Outside of work I've built a few Unity projects in C#, including the 48-hour game jam project: Survaillent."
 		},
 		"JAVASCRIPT":{ 	
-			yearsUsed:"0.5",
+			yearsUsed:"1.5",
 			projects:"4 / Professional",
-			description:"I've recently started using Javascript to contribute to work projects. In order to grow quicker, co-workers are reviewing my solo end-end side projects. I've spent the past two months tirelessly working on side projects in order to iterate fast, fail frequently, and gain experience."
+			description:"I used Javascript at my first job to develop internal tools and front-end features. I've built several front-end and full-stack web projects on my own time, and continue to grow in this area."
 		},
-		"HTML/CSS":{	
-			yearsUsed:"1",
-			projects:"3 / Professional",
-			description:"My previous job involved writing automated tests for a web service, so I'm extremely comfortable with HTML and CSS. I've recently started using it to develop my own projects, but after professional exposure, there was almost no learning curve. I am familiar with other CSS languages like LESS and SASS, but have not used them yet."
+		"HTML / CSS":{	
+			yearsUsed:"2",
+			projects:"4 / Professional",
+			description:"I used HTML and CSS at my first job both in testing our web service, and working on front-end features. I've built several front-end web projects on my own time and continue to grow in this area."
 		},
 		"JAVA":{		
 			yearsUsed:"1",
-			projects:"1 / Professional",
-			description:"I've used Java in both of my professional positions. Other than a few easily google-able syntactical differences, I had no trouble jumping in after using C/C++ and C#. Although, it's worth noting that I use Java for test automation, so I'm proficient with trivial use, but not the ins and outs of the language."
+			projects:"2 / Professional",
+			description:"I've used Java in both of my professional positions. Other than a few easily google-able syntactical differences, I had no trouble jumping in after using C/C++ and C#."
 		},
 		"Shellscript":{
 			yearsUsed:"1",
@@ -161,8 +162,8 @@ function SkillsController($scope){
 		},
 		"PYTHON":{
 			yearsUsed:"1",
-			projects:"1 / Professional",
-			description:"I started learning Python for fun during school in order to familiarize myself with a scripting language. This opened my eyes to how easy and quick small projects could be. I immediately started applying it in my math courses, and used it almost exclusively during my 3 month internship for which Python was the engine's primary language. I've continued to use it when appropriate at work."
+			projects:"2 / Professional",
+			description:"I used Python almost exclusively during my 3 month internship for which Python was the game engine's primary language. I started learning Python for fun during school in order to familiarize myself with a scripting language. I immediately started applying it in my math courses."
 		},
 		"Git":{
 			yearsUsed:"0.6",
@@ -170,9 +171,9 @@ function SkillsController($scope){
 			description:"Git/Github is my current repo at work. I'm familiar with different levels of branching for features/devs/production/etc."
 		},
 		"UNITY 3D":{
-			yearsUsed:"1",
-			projects:"2 / Professional",
-			description:"After developing game engines from the ground up in C++, it was a delight to Unity my Senior year of college. I have built two games with small teams of developers, artists, and designers. I also use Unity lightly in my current position."
+			yearsUsed:"2",
+			projects:"3 / Professional",
+			description:"After developing game engines from the ground up in C++, it was a delight to use Unity. I have built a couple games in Unity, and also use it at work, where I keep up to date on all of the latest releases."
 		},
 		"Selenium Web Driver":{
 			yearsUsed:"0.75",
@@ -185,19 +186,24 @@ function SkillsController($scope){
 			description:"Maintaining and building up Strider is one of my larger professional roles. I worked with my manager to write our CI test runner pipeline which runs test groups based on changed files automatically, and am one of the primary points of contact for CI issues."
 		},
 		"ANGULAR JS":{
-			yearsUsed:"0.5",
-			projects:"2 / Professional",
-			description:"When I started building web apps, AngularJS was recommended to me. I'm exposed to it professionally, and use it on side projects frequently. This very description is data-bound using AngularJS!"
+			yearsUsed:"1",
+			projects:"3 / Professional",
+			description:"AngularJS was the first MVC framework I used to begin making web applications. I used this for test and front end tasks at my first job, and have built a few front-end applications using Angular on my own time. In fact, this site was my first Angular project!"
 		},
 		"Azure":{
 			yearsUsed:"0.15",
 			projects:"3",
 			description:"I'm currently using Azure to host some websites and store data. I know the very basics, but haven't had a need for anything beyond that."
 		},
-		"NODE JS":{
-			yearsUsed:"0.2",
-			projects:"1",
-			description:"I am actively learning how to develop full web applications with NodeJS and its supported toolset, including MySQL, MongoDB, Express.js, Jade, and more."
+		"NODE JS / EXPRESS":{
+			yearsUsed:"Under 1",
+			projects:"2",
+			description:"I used Node at my first job to develop an internal tool. I have since built a full-stack application using Node and Express."
+		},
+		"MONGO / SQL":{
+			yearsUsed:"Under 1",
+			projects:"1", 
+			description:"I learned SQL at school, used it lightly at work, and have used it on small side projects. I have used Mongoose on a couple small full-stack projects."
 		}
 	}
 
