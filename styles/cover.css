@@ -130,7 +130,8 @@
 	margin:auto;
 	display:inline-block;
 	font-size:1.2em;
-	padding-top:10px;
+	padding-top:12px;
+	letter-spacing:1px;
 	
 	-webkit-transition: 0.2s ease-in-out;
     -moz-transition: 0.2s ease-in-out;
