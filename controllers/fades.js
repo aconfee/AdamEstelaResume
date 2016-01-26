@@ -13,24 +13,24 @@ $(window).scroll(function(){
      }
 
      if(top > 750){
-       	$("#testOverview").animate({
+       	$("#webOverview").animate({
        		left:'0px',
      		opacity:1
      	}, 1400);
 
-     	$("#testOverviewIcon").animate({
+     	$("#webOverviewIcon").animate({
        		top:'0px',
      		opacity:1
      	}, 1400);
      }
 
      if(top > 850){
-       	$("#webOverview").animate({
+       	$("#testOverview").animate({
        		left:'0px',
      		opacity:1
      	}, 1600);
 
-     	$("#webOverviewIcon").animate({
+     	$("#testOverviewIcon").animate({
        		top:'0px',
      		opacity:1
      	}, 1600);
@@ -102,11 +102,11 @@ $(window).scroll(function(){
 var setActiveNav = function(index){
   $("#main-menu li a").each(function(index){
     $(this).removeClass("active");
-    $(this).css("color", "rgb(35, 35, 35)");
+    $(this).css({"color": "rgb(35, 35, 35)", "border-bottom": "none"});
   });
 	
   var navButton = $("#main-menu li a").eq(index);		
   navButton.addClass("active");
-  navButton.css("color", "rgb(69, 183, 122)");
+  navButton.css({"color": "rgb(142, 16, 42)", "border-bottom": "1px solid rgb(142, 16, 42)"});
 };
 

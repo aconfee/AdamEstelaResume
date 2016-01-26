@@ -11,12 +11,12 @@ function NavController($scope){
 	$("document").ready(function(){
 		$("#main-menu li a").hover(
 			function(){
-				$(this).css("color", "rgb(69, 183, 122)");
+				$(this).css({"color": "rgb(142, 16, 42)", "border-bottom": "1px solid rgb(142, 16, 42)"});
 			},
 			function(){
 				// If not active, restore to default when leaving hover.
 				if($(this).hasClass("active") === false){
-					$(this).css("color", "rgb(35, 35, 35)");
+					$(this).css({"color": "rgb(35, 35, 35)", "border-bottom": "none"});
 				}
 			}
 		);

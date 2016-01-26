@@ -58,7 +58,7 @@
 }
 
 .portfolio-item-menu-button:hover{
-	color:rgb(69, 183, 122);
+	color:rgb(170, 15, 30);
 	cursor:pointer;
 }
 
@@ -74,12 +74,10 @@
 }
 
 .btn-default:hover{
-	background-color:#3498DB; 
 	color: white;
 }
 
 .btn.active{
-	background-color:#3498DB; 
 	color: white;
 }
 

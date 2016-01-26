@@ -18,15 +18,16 @@
 
 .navbar .nav > li > a {
 	opacity: 1;
+	padding-bottom: 8px;
 }
 
 .navbar .nav > li > a:hover {
-	color:rgb(69, 183, 122);
+	color:rgb(142, 16, 42);
 	cursor: pointer;
 }
 
 .active-nav-button{
-	color:rgb(69, 183, 122);
+	color:rgb(142, 16, 42);
 }
 
 .default-nav-button{
