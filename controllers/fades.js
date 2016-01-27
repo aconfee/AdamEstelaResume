@@ -78,18 +78,18 @@ $(window).scroll(function(){
          setActiveNav(1);
      }
 
-     else if(top >= $("#skills-screen").offset().top- correctedOffset && top < $("#education-screen").offset().top - correctedOffset){
+     else if(top >= $("#skills-screen").offset().top- correctedOffset && top < $("#experience-screen").offset().top - correctedOffset){
        	// Skills
          setActiveNav(2);
      }
 
-     else if(top >= $("#education-screen").offset().top - correctedOffset && top < $("#experience-screen").offset().top - correctedOffset){
-        // Education
+     else if(top >= $("#experience-screen").offset().top - correctedOffset && top < $("#education-screen").offset().top - correctedOffset){
+        // Experience
         setActiveNav(3);
      }
      
-     else if(top >= $("#experience-screen").offset().top - correctedOffset && top < $("#contact-screen").offset().top - correctedOffset){
-       // Experience
+     else if(top >= $("#education-screen").offset().top - correctedOffset && top < $("#contact-screen").offset().top - correctedOffset){
+       // Education
        setActiveNav(4);
      }
      
