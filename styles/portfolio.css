@@ -12,19 +12,19 @@
 
 .portfolio-item-container{
 	/* Don't allow text to exceed the picture width*/
-	max-width:442px;
-	height:360px;
+	max-width:392px;
+	height:325px;
 	
 	text-align:left;	
 	display:inline-block;
 	overflow:hidden;
 	
-	margin:0px 20px;
+	margin:0px 15px;
 }
 
 .portfolio-item{
-	width:442px;
-	height:253px;
+	width:392px;
+	height:225px;
 	
 	border-radius: 2px;
     overflow: hidden;
@@ -42,7 +42,7 @@
 	background-color: rgba(255, 255, 255, 0.7);
 	position:absolute;
 	
-	margin-left:434px;
+	margin-left:384px;
 }
 
 .portfolio-item-menu-button{
