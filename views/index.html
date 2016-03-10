@@ -17,7 +17,7 @@
 	<link rel='stylesheet' type='text/css' href='../styles/portfolio.css' />
 	<link rel='stylesheet' type='text/css' href='../styles/contact.css' />
 	<link rel='stylesheet' type='text/css' href='../styles/fades.css' />
-	
+
 	<!-- jQuery for bootstrap and minor animations -->
 	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 	<!-- Javascript for bootstrap -->
@@ -28,7 +28,7 @@
 	    $('.carousel').carousel();
 	  });
 	</script>
-    
+
     <!-- Begin Inspectlet Embed Code -->
     <script type="text/javascript" id="inspectletjs">
     window.__insp = window.__insp || [];
@@ -67,7 +67,7 @@
 			<li ng-click='scrollToSection("#experience-screen")'><a style="color:rgb(35, 35, 35)">EXPERIENCE</a></li>
 	        <li ng-click='scrollToSection("#education-screen")'><a style="color:rgb(35, 35, 35)">EDUCATION</a></li>
 	        <li ng-click='scrollToSection("#contact-screen")'><a style="color:rgb(35, 35, 35)">CONTACT</a></li>
-	        <li><a class="active" style="color:rgb(142, 16, 42);border-bottom: 1px solid rgb(142, 16, 42); href="../docs/Adam_Estela_Resume.docx">DOWNLOAD RESUME</a></li>
+	        <li><a class="active" style="color:rgb(142, 16, 42);border-bottom: 1px solid rgb(142, 16, 42);" href="../docs/Adam_Estela_Resume.docx">DOWNLOAD RESUME</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -298,7 +298,7 @@
 		<div class='row section'>
 			<div class='col-xs-3 col-xs-offset-2'>
 				<p class='text-header'>LANGUAGES</p>
-				
+
 				<!-- Skill button/progress -->
 				<div class="skill-button-container" ng-repeat="language in languages">
 					<div class="left-bracket" ng-show="$index == selectedLanguage"><img src="../resources/bracketLeftSmall.png"></img></div>
@@ -310,11 +310,11 @@
 					<div class="right-bracket" ng-show="$index == selectedLanguage"><img src="../resources/bracketRightSmall.png"></img></div>
 				</div>
 			</div>
-			
+
 			<!-- Skill description -->
 			<div class="col-xs-1">
 				<div class="left-bracket-big bracket-big"><img src="../resources/bracketLeftLarge.png"></img></div>
-			</div>			
+			</div>
 			<div class='col-xs-4' id='languageDescription'>
 				<div class="skill-description-container">
 					<p class='text-header' style="text-align:center">{{ languageDisplay.name }}</p>
@@ -329,17 +329,17 @@
 						<div class="item-select" ng-class="{'active': $index == selectedLanguage}" ng-repeat="language in languages" ng-click="displayLanguageDescription(language.name); selectLanguage($index)"></div>
 					</div>
 				</div>
-			</div>			
+			</div>
 			<div class="col-xs-1">
 				<div class="right-bracket-big bracket-big"><img src="../resources/bracketRightLarge.png"></img></div>
-			</div>			
+			</div>
 		</div>
-		
+
 		<!-- TOOLS -->
 		<div class='row section'>
 			<div class='col-xs-3 col-xs-offset-2'>
 				<p class='text-header'>TOOLS</p>
-				
+
 				<!-- Tool button/progress -->
 				<div class="skill-button-container" ng-repeat="tool in tools">
 					<div class="left-bracket" ng-show="$index == selectedTool"><img src="../resources/bracketLeftSmall.png"></img></div>
@@ -351,11 +351,11 @@
 					<div class="right-bracket" ng-show="$index == selectedTool"><img src="../resources/bracketRightSmall.png"></img></div>
 				</div>
 			</div>
-			
+
 			<!-- Tool description -->
 			<div class="col-xs-1">
 				<div class="left-bracket-big bracket-big"><img src="../resources/bracketLeftLarge.png"></img></div>
-			</div>	
+			</div>
 			<div class='col-xs-4' id='toolDescription'>
 				<div class="skill-description-container">
 					<p class='text-header' style="text-align:center">{{ toolDisplay.name }}</p>
@@ -373,7 +373,7 @@
 			</div>
 			<div class="col-xs-1">
 				<div class="right-bracket-big bracket-big"><img src="../resources/bracketRightLarge.png"></img></div>
-			</div>	
+			</div>
 		</div>
 		<div class='row section'>
 			<div class='col-xs-10 col-xs-offset-2'>
@@ -443,7 +443,7 @@
 						<br/>
 						<span><i>"Adam Estela is both knowledgeable and eager to learn new things, a rare combination for a programmer. I enjoyed working with him and would highly recommend Adam to anyone who asks."</i></span>
 						<br/>
-						<p style='float:right'>-Trevor Haba / SDE PaperG, Inc.</p> 
+						<p style='float:right'>-Trevor Haba / SDE PaperG, Inc.</p>
 					</div>
 				</p>
 			</div>
@@ -468,7 +468,7 @@
 				<p><b style="color:rgb(154, 0, 0)">Graduated:</b> December 13th, 2013</p>
 				<br/>
 				<p><b style="color:rgb(154, 0, 0)">Tutored:</b> 3D Graphics Implementation, Game Engine Implementation Techniques, English, CS Fundamentals, and Math.</p>
-				<p><b style="color:rgb(154, 0, 0)">Interned:</b> I was chosen among several students to intern in DigiPen's R&D department for my final semester.</p> 
+				<p><b style="color:rgb(154, 0, 0)">Interned:</b> I was chosen among several students to intern in DigiPen's R&D department for my final semester.</p>
 				<p>"Adam has been great to work with. I have worked with him on multiple game projects, side projects in our spare time, and tutored with him. He is unbelievably hard working and motivated in everything he does." -David James / SDE Microsoft
 			</div>
 		</div>
@@ -527,7 +527,7 @@
 			<p style='color:white;letter-spacing:0.2em;' class='text'>All content &copy; 2014-2016 Adam Confe Estela, all rights reserved.</p>
 		</div>
 	</div>
-	
+
 	<!-- AngularJS to avoid duplicate HTML templates. All data is local. -->
 	<script src="../bower_components/angular/angular.min.js"></script>
 
@@ -543,4 +543,3 @@
 </body>
 
 <html>
-

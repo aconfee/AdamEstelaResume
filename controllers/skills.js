@@ -106,25 +106,25 @@ function SkillsController($scope){
 			});
 		});
 	};
-	
+
 	$scope.selectLanguage = function($index){
 		if($index === $scope.selectedLanguage){
 			return;
 		}
-		
+
 		// Update the index of the selected language and change the background colors of the previous and current active bar.
-		$(".skill-progress.language").eq($scope.selectedLanguage).css("background-color", "rgb(68, 80, 96)");		
+		$(".skill-progress.language").eq($scope.selectedLanguage).css("background-color", "rgb(68, 80, 96)");
 		$scope.selectedLanguage = $index;
 		$(".skill-progress.language").eq($scope.selectedLanguage).css("background-color", "rgb(123, 137, 157)")
 	};
-	
+
 	$scope.selectTool = function($index){
 		if($index === $scope.selectedTool){
 			return;
 		}
-		
+
 		// Update the index of the selected tool and change the background colors of the previous and current active bar.
-		$(".skill-progress.tool").eq($scope.selectedTool).css("background-color", "rgb(68, 80, 96)");		
+		$(".skill-progress.tool").eq($scope.selectedTool).css("background-color", "rgb(68, 80, 96)");
 		$scope.selectedTool = $index;
 		$(".skill-progress.tool").eq($scope.selectedTool).css("background-color", "rgb(123, 137, 157)")
 	}
@@ -135,22 +135,22 @@ function SkillsController($scope){
 			projects:"6",
 			description:"My fundamentals were learned in C and all 4 years of college involved heavy use of C++ and implementation of most common STL containers. Along with typical course assignments, I worked on 4 game engines with several different teams built from the ground up in C++."
 		},
-		"C#":{	
+		"C#":{
 			yearsUsed:"2.5",
 			projects:"4 / Professional",
 			description:"I currently use C# as my primary language at work develop an automation framework and toolset from the ground up that scales across multiple products and vastly varying devices, including the HoloLens. Outside of work I've built a few Unity projects in C#, including the 48-hour game jam project: Survaillent."
 		},
-		"JAVASCRIPT":{ 	
+		"JAVASCRIPT":{
 			yearsUsed:"1.5",
 			projects:"4 / Professional",
 			description:"I used Javascript at my first job to develop internal tools and front-end features. I've built several front-end and full-stack web projects on my own time, and continue to grow in this area."
 		},
-		"HTML / CSS":{	
+		"HTML / CSS":{
 			yearsUsed:"2",
 			projects:"4 / Professional",
 			description:"I used HTML and CSS at my first job both in testing our web service, and working on front-end features. I've built several front-end web projects on my own time and continue to grow in this area."
 		},
-		"JAVA":{		
+		"JAVA":{
 			yearsUsed:"1",
 			projects:"2 / Professional",
 			description:"I've used Java in both of my professional positions. Other than a few easily google-able syntactical differences, I had no trouble jumping in after using C/C++ and C#."
@@ -202,7 +202,7 @@ function SkillsController($scope){
 		},
 		"MONGO / SQL":{
 			yearsUsed:"Under 1",
-			projects:"1", 
+			projects:"1",
 			description:"I learned SQL at school, used it lightly at work, and have used it on small side projects. I have used Mongoose on a couple small full-stack projects."
 		}
 	}
@@ -221,13 +221,13 @@ function SkillsController($scope){
 		projects:self.descriptions[$scope.tools[0].name].projects,
 		description:self.descriptions[$scope.tools[0].name].description
 	};
-	
+
 	$(document).ready(function(){
 			
 		$(".skill-button").hover(
 			function(){
 				$(this).find(".skill-progress").css("background-color", "rgb(123, 137, 157)");
-			}, 
+			},
 			function(){
 				// If this bar is not active, return to default color.
 				if($(this).find(".skill-progress-active").length === 0){
